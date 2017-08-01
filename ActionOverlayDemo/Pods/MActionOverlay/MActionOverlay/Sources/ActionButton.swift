@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class ActionButton: UIButton {
+class ActionButton: UIButton {
 
     /**
      The transitionDelegate
@@ -31,7 +31,7 @@ open class ActionButton: UIButton {
      */
     open var duration = 0.5
 
-    override open func awakeFromNib() {
+    override func awakeFromNib() {
         super.awakeFromNib()
         
         self.layer.cornerRadius = self.frame.height/2

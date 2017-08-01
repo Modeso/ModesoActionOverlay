@@ -169,7 +169,7 @@ class OverlayViewController: UIViewController {
     }
 }
 
-public protocol OverlayViewDelegate {
+protocol OverlayViewDelegate {
     func showActionButton()
     func buttonClicked(id: Int)
 }

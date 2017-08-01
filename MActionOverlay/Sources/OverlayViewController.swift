@@ -73,7 +73,7 @@ class OverlayViewController: UIViewController {
             return
         }
         newButton.tag = buttonsIds[count]
-        newButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(overlayButtonClicked(_:))))
+        newButton.addTarget(self, action: #selector(overlayButtonClicked(_:)), for: .touchUpInside)
         buttons.append(newButton)
         view.addSubview(newButton)
 
@@ -115,7 +115,7 @@ class OverlayViewController: UIViewController {
         closeButton.tintColor = UIColor.white
         closeButton.imageEdgeInsets = UIEdgeInsetsMake(5, 5, 5, 5)
         closeButton.translatesAutoresizingMaskIntoConstraints = false
-        closeButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(close(_:))))
+        closeButton.addTarget(self, action: #selector(closeOverlayView), for: .touchUpInside)
         view.addSubview(closeButton)
 
         let horizontalLeftConstraint = NSLayoutConstraint(item: closeButton, attribute: NSLayoutAttribute.trailingMargin, relatedBy: NSLayoutRelation.equal, toItem: view, attribute: NSLayoutAttribute.trailingMargin, multiplier: 1, constant: 0)
@@ -127,7 +127,7 @@ class OverlayViewController: UIViewController {
         return closeButton
     }
     
-    func close(_ sender: UIGestureRecognizer) {
+    func closeOverlayView() {
         closeButton.transform = CGAffineTransform(rotationAngle: -180)
         buttonsCount = self.buttons.count - 1
         UIView.animate(withDuration: 0.5, animations: {
@@ -155,12 +155,8 @@ class OverlayViewController: UIViewController {
         }
     }
 
-    func overlayButtonClicked(_ sender: UITapGestureRecognizer) {
-        let button = sender.view as? UIButton
-        guard let buttonTag = button?.tag else {
-            return
-        }
-        delegate?.buttonClicked(id: buttonTag)
+    func overlayButtonClicked(_ sender: UIButton) {
+        delegate?.buttonClicked(id: sender.tag)
     }
 
     override func viewWillDisappear(_ animated: Bool) {

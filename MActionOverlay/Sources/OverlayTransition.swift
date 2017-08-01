@@ -18,7 +18,6 @@ open class OverlayTransition: NSObject {
             overlayView.center = startingPoint
         }
     }
-    var x: Int = 0
     /**
      The transition duration
      Defaults to `0.5`

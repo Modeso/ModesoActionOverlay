@@ -123,6 +123,7 @@
 				TargetAttributes = {
 					E94F06DD1F3087A20006A875 = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = XP9UK5V4RA;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -338,7 +339,9 @@
 			baseConfigurationReference = A367D85C7F5921062F93B76B /* Pods-ActionOverlayDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XP9UK5V4RA;
 				INFOPLIST_FILE = ActionOverlayDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = modeso.ActionOverlayDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -351,7 +354,9 @@
 			baseConfigurationReference = 1512CA4574225A33788AED39 /* Pods-ActionOverlayDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XP9UK5V4RA;
 				INFOPLIST_FILE = ActionOverlayDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = modeso.ActionOverlayDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -378,6 +383,7 @@
 				E94F06F21F3087A20006A875 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -39,17 +39,17 @@
 		0A1DAD58B6AF2132B629DFDD1896D3AC /* Pods-ActionOverlayDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ActionOverlayDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		106A980D2645ABC2CA4826EEB95C86A6 /* OverlayTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OverlayTransition.swift; path = MActionOverlay/Sources/OverlayTransition.swift; sourceTree = "<group>"; };
 		18A2023115AEAD6A403A5A68E6F427C6 /* Pods-ActionOverlayDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ActionOverlayDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2E409B41CFFC00E902AA0A9B06880266 /* MActionOverlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MActionOverlay.framework; path = MActionOverlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E409B41CFFC00E902AA0A9B06880266 /* MActionOverlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MActionOverlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		427A1CF81367E4BCE9A4A060A3027154 /* OverlayViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OverlayViewController.swift; path = MActionOverlay/Sources/OverlayViewController.swift; sourceTree = "<group>"; };
 		4378B7C808B99F6621C874A6A6F8B098 /* Pods-ActionOverlayDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ActionOverlayDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		45B937EBAFB938F58ED5FFFCAFBDD3D9 /* Pods-ActionOverlayDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ActionOverlayDemo-dummy.m"; sourceTree = "<group>"; };
-		486DE1AC01A5EFACD335D59814C1B7FF /* Pods-ActionOverlayDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ActionOverlayDemo.modulemap"; sourceTree = "<group>"; };
-		510B3659BCB49918A117569D08E6FC8C /* Pods_ActionOverlayDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ActionOverlayDemo.framework; path = "Pods-ActionOverlayDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		486DE1AC01A5EFACD335D59814C1B7FF /* Pods-ActionOverlayDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ActionOverlayDemo.modulemap"; sourceTree = "<group>"; };
+		510B3659BCB49918A117569D08E6FC8C /* Pods_ActionOverlayDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActionOverlayDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64699B5D5353B13E8FADCA9802D88A42 /* ActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionButton.swift; path = MActionOverlay/Sources/ActionButton.swift; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		86FE6DFC1EE6BDBF3EE0CA7293C4364D /* Pods-ActionOverlayDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ActionOverlayDemo-frameworks.sh"; sourceTree = "<group>"; };
 		91FA2632DE18301474BDEE5E989E480C /* MActionOverlay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MActionOverlay-prefix.pch"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B9139DAF2AFC102E9BB05DC54CFFC63E /* Pods-ActionOverlayDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ActionOverlayDemo-resources.sh"; sourceTree = "<group>"; };
 		BF0FFC3B36388FBFAAF57D6C4D2E1792 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C663D601053AEE5777526DB16094DABA /* UIView+extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+extension.swift"; path = "MActionOverlay/Sources/UIView+extension.swift"; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 		D48F74911B8D49D756E0E04667EDCA91 /* Pods-ActionOverlayDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ActionOverlayDemo-umbrella.h"; sourceTree = "<group>"; };
 		D5BF0E1AE989D1E76CE42BEB279DE5E7 /* Pods-ActionOverlayDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ActionOverlayDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D74A52822FA828820EFFBCCBD676197C /* MActionOverlay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MActionOverlay-dummy.m"; sourceTree = "<group>"; };
-		DD49DD3E4EA3323AB73A2880E4305D4B /* MActionOverlay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MActionOverlay.modulemap; sourceTree = "<group>"; };
+		DD49DD3E4EA3323AB73A2880E4305D4B /* MActionOverlay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MActionOverlay.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +99,6 @@
 				F1100E713E0483891B97533F6F03B657 /* Resources */,
 				EA6A696774DB9F1F9B2DD3206003953B /* Support Files */,
 			);
-			name = MActionOverlay;
 			path = MActionOverlay;
 			sourceTree = "<group>";
 		};
@@ -417,7 +416,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-ActionOverlayDemo/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ActionOverlayDemo/Pods-ActionOverlayDemo.modulemap";
@@ -535,7 +534,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-ActionOverlayDemo/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ActionOverlayDemo/Pods-ActionOverlayDemo.modulemap";

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66D749799723D49E1C078A0A /* Pods_ActionOverlayDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4874C56FAD32884AFED6DF43 /* Pods_ActionOverlayDemo.framework */; };
 		E94F06E21F3087A20006A875 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94F06E11F3087A20006A875 /* AppDelegate.swift */; };
 		E94F06E41F3087A20006A875 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94F06E31F3087A20006A875 /* ViewController.swift */; };
 		E94F06E71F3087A20006A875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E94F06E51F3087A20006A875 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1512CA4574225A33788AED39 /* Pods-ActionOverlayDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActionOverlayDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ActionOverlayDemo/Pods-ActionOverlayDemo.release.xcconfig"; sourceTree = "<group>"; };
+		4874C56FAD32884AFED6DF43 /* Pods_ActionOverlayDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActionOverlayDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A367D85C7F5921062F93B76B /* Pods-ActionOverlayDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActionOverlayDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ActionOverlayDemo/Pods-ActionOverlayDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E94F06DE1F3087A20006A875 /* ActionOverlayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActionOverlayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E94F06E11F3087A20006A875 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E94F06E31F3087A20006A875 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66D749799723D49E1C078A0A /* Pods_ActionOverlayDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C8D287607137006B5B2B29E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A367D85C7F5921062F93B76B /* Pods-ActionOverlayDemo.debug.xcconfig */,
+				1512CA4574225A33788AED39 /* Pods-ActionOverlayDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E1D0E8E74612023AC8D229F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4874C56FAD32884AFED6DF43 /* Pods_ActionOverlayDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E94F06D51F3087A20006A875 = {
 			isa = PBXGroup;
 			children = (
 				E94F06E01F3087A20006A875 /* ActionOverlayDemo */,
 				E94F06DF1F3087A20006A875 /* Products */,
+				8C8D287607137006B5B2B29E /* Pods */,
+				E1D0E8E74612023AC8D229F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E94F06F01F3087A20006A875 /* Build configuration list for PBXNativeTarget "ActionOverlayDemo" */;
 			buildPhases = (
+				AF5DC79248B02EEA4D182C40 /* [CP] Check Pods Manifest.lock */,
 				E94F06DA1F3087A20006A875 /* Sources */,
 				E94F06DB1F3087A20006A875 /* Frameworks */,
 				E94F06DC1F3087A20006A875 /* Resources */,
+				2F6250EE56BBCE0C60CA63A2 /* [CP] Embed Pods Frameworks */,
+				BB3ADBBFB43D7B08CD012649 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F6250EE56BBCE0C60CA63A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ActionOverlayDemo/Pods-ActionOverlayDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF5DC79248B02EEA4D182C40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BB3ADBBFB43D7B08CD012649 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ActionOverlayDemo/Pods-ActionOverlayDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E94F06DA1F3087A20006A875 /* Sources */ = {
@@ -260,6 +335,7 @@
 		};
 		E94F06F11F3087A20006A875 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A367D85C7F5921062F93B76B /* Pods-ActionOverlayDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ActionOverlayDemo/Info.plist;
@@ -272,6 +348,7 @@
 		};
 		E94F06F21F3087A20006A875 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1512CA4574225A33788AED39 /* Pods-ActionOverlayDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ActionOverlayDemo/Info.plist;

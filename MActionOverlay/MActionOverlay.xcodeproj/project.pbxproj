@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		E94F06CF1F307D460006A875 /* MActionOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = E94F06CD1F307D460006A875 /* MActionOverlay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E94F06F81F3096BA0006A875 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94F06F41F3096BA0006A875 /* ActionButton.swift */; };
+		E94F06F91F3096BA0006A875 /* OverlayTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94F06F51F3096BA0006A875 /* OverlayTransition.swift */; };
+		E94F06FA1F3096BA0006A875 /* OverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94F06F61F3096BA0006A875 /* OverlayViewController.swift */; };
+		E94F06FB1F3096BA0006A875 /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94F06F71F3096BA0006A875 /* UIView+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E94F06CA1F307D460006A875 /* MActionOverlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MActionOverlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E94F06CD1F307D460006A875 /* MActionOverlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MActionOverlay.h; sourceTree = "<group>"; };
 		E94F06CE1F307D460006A875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E94F06F41F3096BA0006A875 /* ActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		E94F06F51F3096BA0006A875 /* OverlayTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayTransition.swift; sourceTree = "<group>"; };
+		E94F06F61F3096BA0006A875 /* OverlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayViewController.swift; sourceTree = "<group>"; };
+		E94F06F71F3096BA0006A875 /* UIView+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +54,22 @@
 		E94F06CC1F307D460006A875 /* MActionOverlay */ = {
 			isa = PBXGroup;
 			children = (
+				E94F06F31F3096BA0006A875 /* Sources */,
 				E94F06CD1F307D460006A875 /* MActionOverlay.h */,
 				E94F06CE1F307D460006A875 /* Info.plist */,
 			);
 			path = MActionOverlay;
+			sourceTree = "<group>";
+		};
+		E94F06F31F3096BA0006A875 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E94F06F41F3096BA0006A875 /* ActionButton.swift */,
+				E94F06F51F3096BA0006A875 /* OverlayTransition.swift */,
+				E94F06F61F3096BA0006A875 /* OverlayViewController.swift */,
+				E94F06F71F3096BA0006A875 /* UIView+extension.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E94F06FA1F3096BA0006A875 /* OverlayViewController.swift in Sources */,
+				E94F06F81F3096BA0006A875 /* ActionButton.swift in Sources */,
+				E94F06FB1F3096BA0006A875 /* UIView+extension.swift in Sources */,
+				E94F06F91F3096BA0006A875 /* OverlayTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +317,7 @@
 				E94F06D41F307D460006A875 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

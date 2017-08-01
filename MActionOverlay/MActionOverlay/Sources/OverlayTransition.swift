@@ -6,7 +6,7 @@
 //  Created by Reem Hesham on 7/24/17.
 //  Copyright © 2017 Modeso. All rights reserved.
 //
-// Helloooooo
+
 import UIKit
 
 open class OverlayTransition: NSObject {
@@ -18,7 +18,7 @@ open class OverlayTransition: NSObject {
             overlayView.center = startingPoint
         }
     }
-    
+    var x: Int = 0
     /**
      The transition duration
      Defaults to `0.5`

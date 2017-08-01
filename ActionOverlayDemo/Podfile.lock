@@ -2,20 +2,21 @@ PODS:
   - MActionOverlay (1.0.0)
 
 DEPENDENCIES:
-  - MActionOverlay (from `https://github.com/Modeso/MActionOverlay.git`)
+  - MActionOverlay (from `https://github.com/Modeso/MActionOverlay.git`, branch `1.0.0`)
 
 EXTERNAL SOURCES:
   MActionOverlay:
+    :branch: 1.0.0
     :git: https://github.com/Modeso/MActionOverlay.git
 
 CHECKOUT OPTIONS:
   MActionOverlay:
-    :commit: c9754fe50e2e86ac9a4fef28bb06a85bc6868742
+    :commit: 4c3370b1fff79282f7d10d00b5809840eadef28d
     :git: https://github.com/Modeso/MActionOverlay.git
 
 SPEC CHECKSUMS:
   MActionOverlay: 2ea7a753315b744ee16be3fa301fcc7d0e17d6dd
 
-PODFILE CHECKSUM: c324a9cfb31730101fc36db4ca81fd0708f7aebd
+PODFILE CHECKSUM: f08a87815ffb43ac8aa825387bf17779c47f96b6
 
 COCOAPODS: 1.2.1

@@ -18,7 +18,6 @@ open class OverlayTransition: NSObject {
             overlayView.center = startingPoint
         }
     }
-    
     /**
      The transition duration
      Defaults to `0.5`
@@ -48,6 +47,7 @@ extension OverlayTransition: UIViewControllerAnimatedTransitioning {
         guard let modalControllerView = transitionContext.view(forKey: UITransitionContextViewKey.to) else {
             return
         }
+
         //center point of the presented controller view.
         let originalSize = modalControllerView.frame.size
         // create the overlay view which start from the center of the modal controller view
@@ -72,8 +72,7 @@ extension OverlayTransition: UIViewControllerAnimatedTransitioning {
         UIView.animate(withDuration: duration, animations: {
             self.overlayView.transform = CGAffineTransform.identity
             self.overlayView.layoutIfNeeded()
-            
-            
+
         }, completion: { (_) in
             self.overlayView.isHidden = true
             modalControllerView.transform = CGAffineTransform.identity

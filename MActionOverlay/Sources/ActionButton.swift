@@ -73,7 +73,7 @@ open class ActionButton: UIButton {
         return vc
     }
 
-    func showActionButton() {
+    open func showActionButton() {
         self.isHidden = false
         self.isEnabled = true
         self.alpha = 1

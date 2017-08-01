@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   MActionOverlay:
-    :commit: 4c3370b1fff79282f7d10d00b5809840eadef28d
+    :commit: 0dcb27693dc4a3daae825b98eed2cdc4827dbc4f
     :git: https://github.com/Modeso/MActionOverlay.git
 
 SPEC CHECKSUMS:

@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E92F45041F30ACB000E2A793 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92F45001F30ACB000E2A793 /* ActionButton.swift */; };
+		E92F45051F30ACB000E2A793 /* OverlayTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92F45011F30ACB000E2A793 /* OverlayTransition.swift */; };
+		E92F45061F30ACB000E2A793 /* OverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92F45021F30ACB000E2A793 /* OverlayViewController.swift */; };
+		E92F45071F30ACB000E2A793 /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92F45031F30ACB000E2A793 /* UIView+extension.swift */; };
 		E94F06CF1F307D460006A875 /* MActionOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = E94F06CD1F307D460006A875 /* MActionOverlay.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E94F06F81F3096BA0006A875 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94F06F41F3096BA0006A875 /* ActionButton.swift */; };
-		E94F06F91F3096BA0006A875 /* OverlayTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94F06F51F3096BA0006A875 /* OverlayTransition.swift */; };
-		E94F06FA1F3096BA0006A875 /* OverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94F06F61F3096BA0006A875 /* OverlayViewController.swift */; };
-		E94F06FB1F3096BA0006A875 /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94F06F71F3096BA0006A875 /* UIView+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E92F45001F30ACB000E2A793 /* ActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		E92F45011F30ACB000E2A793 /* OverlayTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayTransition.swift; sourceTree = "<group>"; };
+		E92F45021F30ACB000E2A793 /* OverlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayViewController.swift; sourceTree = "<group>"; };
+		E92F45031F30ACB000E2A793 /* UIView+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
 		E94F06CA1F307D460006A875 /* MActionOverlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MActionOverlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E94F06CD1F307D460006A875 /* MActionOverlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MActionOverlay.h; sourceTree = "<group>"; };
 		E94F06CE1F307D460006A875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E94F06F41F3096BA0006A875 /* ActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
-		E94F06F51F3096BA0006A875 /* OverlayTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayTransition.swift; sourceTree = "<group>"; };
-		E94F06F61F3096BA0006A875 /* OverlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayViewController.swift; sourceTree = "<group>"; };
-		E94F06F71F3096BA0006A875 /* UIView+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +35,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E92F44FF1F30ACB000E2A793 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E92F45001F30ACB000E2A793 /* ActionButton.swift */,
+				E92F45011F30ACB000E2A793 /* OverlayTransition.swift */,
+				E92F45021F30ACB000E2A793 /* OverlayViewController.swift */,
+				E92F45031F30ACB000E2A793 /* UIView+extension.swift */,
+			);
+			path = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
 		E94F06C01F307D460006A875 = {
 			isa = PBXGroup;
 			children = (
@@ -54,22 +65,11 @@
 		E94F06CC1F307D460006A875 /* MActionOverlay */ = {
 			isa = PBXGroup;
 			children = (
-				E94F06F31F3096BA0006A875 /* Sources */,
+				E92F44FF1F30ACB000E2A793 /* Sources */,
 				E94F06CD1F307D460006A875 /* MActionOverlay.h */,
 				E94F06CE1F307D460006A875 /* Info.plist */,
 			);
 			path = MActionOverlay;
-			sourceTree = "<group>";
-		};
-		E94F06F31F3096BA0006A875 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				E94F06F41F3096BA0006A875 /* ActionButton.swift */,
-				E94F06F51F3096BA0006A875 /* OverlayTransition.swift */,
-				E94F06F61F3096BA0006A875 /* OverlayViewController.swift */,
-				E94F06F71F3096BA0006A875 /* UIView+extension.swift */,
-			);
-			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,6 +115,7 @@
 				TargetAttributes = {
 					E94F06C91F307D460006A875 = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = XP9UK5V4RA;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -151,10 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E94F06FA1F3096BA0006A875 /* OverlayViewController.swift in Sources */,
-				E94F06F81F3096BA0006A875 /* ActionButton.swift in Sources */,
-				E94F06FB1F3096BA0006A875 /* UIView+extension.swift in Sources */,
-				E94F06F91F3096BA0006A875 /* OverlayTransition.swift in Sources */,
+				E92F45061F30ACB000E2A793 /* OverlayViewController.swift in Sources */,
+				E92F45041F30ACB000E2A793 /* ActionButton.swift in Sources */,
+				E92F45071F30ACB000E2A793 /* UIView+extension.swift in Sources */,
+				E92F45051F30ACB000E2A793 /* OverlayTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,12 +267,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XP9UK5V4RA;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = MActionOverlay/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = modeso.MActionOverlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -285,11 +289,13 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XP9UK5V4RA;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = MActionOverlay/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = modeso.MActionOverlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";

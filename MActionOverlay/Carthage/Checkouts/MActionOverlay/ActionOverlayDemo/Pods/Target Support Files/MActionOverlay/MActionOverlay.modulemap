@@ -1,0 +1,6 @@
+framework module MActionOverlay {
+  umbrella header "MActionOverlay-umbrella.h"
+
+  export *
+  module * { export * }
+}

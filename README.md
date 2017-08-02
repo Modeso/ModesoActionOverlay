@@ -7,6 +7,7 @@
 [![CocoaPods Compatible](https://img.shields.io/badge/Pod-compatible-4BC51D.svg
 )](https://cocoapods.org
 )
+[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Platform](https://img.shields.io/badge/Platform-iOS-d3d3d3.svg)]()
 [![Twitter](https://img.shields.io/badge/twitter-@modeso_ch-0B0032.svg?style=flat)](http://twitter.com/AlamofireSF)
 

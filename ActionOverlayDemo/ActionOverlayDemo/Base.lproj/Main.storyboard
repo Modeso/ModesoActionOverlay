@@ -24,39 +24,45 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CXe-2f-mgd">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="264"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNa-vg-vlv">
-                                        <rect key="frame" x="166" y="16" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dep-FV-DMz" customClass="ActionButton" customModule="MActionOverlay">
-                                        <rect key="frame" x="301" y="239" width="50" height="50"/>
-                                        <color key="backgroundColor" red="0.95719110969999999" green="0.10473001749999999" blue="0.3090619147" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="i4p-5R-PMn"/>
-                                            <constraint firstAttribute="width" constant="50" id="oIz-OL-s10"/>
-                                        </constraints>
-                                        <state key="normal" title="...">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile-img" translatesAutoresizingMaskIntoConstraints="NO" id="Afm-5j-FT0">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="264"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="264" id="1ff-dH-GfV"/>
-                                    <constraint firstItem="tNa-vg-vlv" firstAttribute="top" secondItem="CXe-2f-mgd" secondAttribute="top" constant="16" id="IzK-Aw-Sac"/>
-                                    <constraint firstAttribute="trailing" secondItem="dep-FV-DMz" secondAttribute="trailing" constant="24" id="M1g-Zx-DjC"/>
-                                    <constraint firstAttribute="bottom" secondItem="dep-FV-DMz" secondAttribute="bottom" constant="-25" id="h3O-99-aMc"/>
-                                    <constraint firstItem="tNa-vg-vlv" firstAttribute="centerX" secondItem="CXe-2f-mgd" secondAttribute="centerX" id="xXL-fg-9tV"/>
+                                    <constraint firstItem="Afm-5j-FT0" firstAttribute="leading" secondItem="CXe-2f-mgd" secondAttribute="leading" id="Pcq-15-7xc"/>
+                                    <constraint firstItem="Afm-5j-FT0" firstAttribute="top" secondItem="CXe-2f-mgd" secondAttribute="top" id="YJW-rw-cVj"/>
+                                    <constraint firstAttribute="trailing" secondItem="Afm-5j-FT0" secondAttribute="trailing" id="ekc-fN-Ef3"/>
+                                    <constraint firstAttribute="bottom" secondItem="Afm-5j-FT0" secondAttribute="bottom" id="evy-5f-hBB"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chart-img" translatesAutoresizingMaskIntoConstraints="NO" id="8VH-2R-ihj">
+                                <rect key="frame" x="0.0" y="264" width="375" height="403"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dep-FV-DMz" customClass="ActionButton" customModule="MActionOverlay">
+                                <rect key="frame" x="314" y="239" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.95719110969999999" green="0.10473001749999999" blue="0.3090619147" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="i4p-5R-PMn"/>
+                                    <constraint firstAttribute="width" constant="50" id="oIz-OL-s10"/>
+                                </constraints>
+                                <state key="normal" image="ellipsis-icon">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="CXe-2f-mgd" firstAttribute="leading" secondItem="6bR-iX-Ffn" secondAttribute="leading" id="6m4-by-OCO"/>
+                            <constraint firstItem="8VH-2R-ihj" firstAttribute="top" secondItem="Afm-5j-FT0" secondAttribute="bottom" id="7Nk-WB-dDF"/>
                             <constraint firstAttribute="trailing" secondItem="CXe-2f-mgd" secondAttribute="trailing" id="FuL-ZU-RPr"/>
                             <constraint firstItem="CXe-2f-mgd" firstAttribute="top" secondItem="6bR-iX-Ffn" secondAttribute="top" id="JzF-yG-FNC"/>
+                            <constraint firstItem="dep-FV-DMz" firstAttribute="top" secondItem="CXe-2f-mgd" secondAttribute="bottom" constant="-25" id="Lly-S9-LJQ"/>
+                            <constraint firstItem="8VH-2R-ihj" firstAttribute="leading" secondItem="6bR-iX-Ffn" secondAttribute="leading" id="NQ5-Kv-dXT"/>
+                            <constraint firstAttribute="trailing" secondItem="dep-FV-DMz" secondAttribute="trailing" constant="11" id="bxe-g8-K5M"/>
+                            <constraint firstItem="Pef-Z3-lNH" firstAttribute="top" secondItem="8VH-2R-ihj" secondAttribute="bottom" id="ix0-aB-7ZT"/>
+                            <constraint firstAttribute="trailing" secondItem="8VH-2R-ihj" secondAttribute="trailing" id="sLy-wS-gCL"/>
                         </constraints>
                     </view>
                     <connections>
@@ -66,7 +72,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vod-Dq-tMJ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="289" y="118"/>
+            <point key="canvasLocation" x="288.80000000000001" y="117.39130434782609"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chart-img" width="495" height="577"/>
+        <image name="ellipsis-icon" width="50" height="50"/>
+        <image name="profile-img" width="496" height="303"/>
+    </resources>
 </document>

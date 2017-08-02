@@ -19,6 +19,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let img = UIImage(named: "ellipsis-icon")?.withRenderingMode(.alwaysTemplate)
+        actionButton.setImage(img, for: .normal)
+        actionButton.tintColor = UIColor.white
+        actionButton.imageEdgeInsets = UIEdgeInsetsMake(15, 15, 15, 15)
+        
         transition = OverlayTransition()
     }
     

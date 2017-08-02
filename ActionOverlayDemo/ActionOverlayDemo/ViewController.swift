@@ -12,38 +12,29 @@ import MActionOverlay
 class ViewController: UIViewController {
 
     @IBOutlet weak var actionButton: ActionButton!
-    var x: CGFloat!
-    let transition = OverlayTransition()
-    var actionButtonOrigin: CGPoint!
+
+    var transition: OverlayTransition!
     
     @IBOutlet weak var grayView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        transition = OverlayTransition()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+
         actionButton.parentViewController = self
         actionButton.targetView = grayView
         actionButton.transitionDelegate = self
         actionButton.overlayViewDelegate = self
         actionButton.overlayButtonsNumber = 3
         actionButton.overlayButtonsIds = [1, 2, 3]
-        actionButton.overlayButtonsImages = ["camera-icon", "share-icon", "cloud-icon", "share-icon", "cloud-icon"]
-        
+        actionButton.overlayButtonsImages = ["camera-icon", "share-icon", "cloud-icon"]
     }
-    func test(gesture: UIGestureRecognizer) {
-        print("buttonClicked")
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-        
-    }
-    
 }
+//MARK:- UIViewControllerTransitioningDelegate methods
 extension ViewController: UIViewControllerTransitioningDelegate {
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
@@ -52,6 +43,7 @@ extension ViewController: UIViewControllerTransitioningDelegate {
         return transition
     }
 }
+//MARK:- OverlayViewDelegate methods
 extension ViewController: OverlayViewDelegate {
     func showActionButton() {
         actionButton.showActionButton()

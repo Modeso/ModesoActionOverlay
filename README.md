@@ -64,6 +64,86 @@ If you prefer not to use either of the aforementioned dependency managers, you c
 
 ## Usage
 
+### Xib file
+
+<img src="https://github.com/Modeso/MActionOverlay/blob/master/Xib.png" alt="Xib">
+
+- Add your action button.
+- Change the class of the added button to `ActionButton`
+
+### Code
+
+In your `ViewController.swift` class import `MActionOverlay`
+```swift
+import MActionOverlay
+```
+Add an outlet of your added button in your `ViewController.swift` class
+```swift
+@IBOutlet weak var actionButton: ActionButton!
+```
+Define a new OverlayTransition instance.
+```swift
+var overlayTransition: OverlayTransition!
+```
+Assign it in `viewDidLoad` method
+```swift
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        overlayTransition = OverlayTransition()
+    }
+```
+Then, set necessary parameters for `actionButton`
+```swift
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        actionButton.parentViewController = self
+        actionButton.targetView = grayView
+        actionButton.transitionDelegate = self
+        actionButton.overlayViewDelegate = self
+        actionButton.overlayButtonsNumber = 3
+        actionButton.overlayButtonsIds = [1, 2, 3]
+        actionButton.overlayButtonsImages = ["camera-icon", "share-icon", "cloud-icon"]
+    }
+```
+> `parentViewController`: The view controller which contains your action button and responsible for presenting the modal view controller which contains the options buttons.
+> `targetView`: Your overlayed view.
+> `transitionDelegate`: UIViewControllerTransitioningDelegate for view controller's transition animation.
+> `overlayViewDelegate`: OverlayViewDelegate handle showin action button after dismissing the modal view controller by calling **showActionButton()** method and handle actions of options buttons by calling **buttonClicked(id: Int)** method.<br />
+> `overlayButtonsNumber`: The number of the options buttons inside the modal view controller **1 to 5 buttons**.
+> `overlayButtonsIds`: Array of integers represents the id of each button.<br />
+> `overlayButtonsImages`: Array of strings represents buttons icons' names.
+
+Then, handle UIViewControllerTransitioningDelegate methods
+set necessary parameters for `overlayTransition` instance
+```swift
+//MARK:- UIViewControllerTransitioningDelegate methods
+extension ViewController: UIViewControllerTransitioningDelegate {
+    
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        overlayTransition.startingPoint = self.grayView.center
+        overlayTransition.overlayViewColor = actionButton.backgroundColor!
+        return overlayTransition
+    }
+}
+```
+> `startingPoint`: The point which transition animation will start from.
+> `overlayViewColor`: Color of the overlay view.
+
+Finally, handle OverlayViewDelegate methods
+
+```swift
+//MARK:- OverlayViewDelegate methods
+extension ViewController: OverlayViewDelegate {
+    func showActionButton() {
+        actionButton.showActionButton()
+    }
+    func buttonClicked(id: Int) {
+        print("buttonID\(id)")
+    }
+}
+```
+
 ## Communication
 
 - If you **found a bug**, open an issue.

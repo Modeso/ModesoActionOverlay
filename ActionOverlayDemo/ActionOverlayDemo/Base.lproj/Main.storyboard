@@ -47,7 +47,7 @@
                                     <constraint firstAttribute="height" constant="50" id="i4p-5R-PMn"/>
                                     <constraint firstAttribute="width" constant="50" id="oIz-OL-s10"/>
                                 </constraints>
-                                <state key="normal" image="ellipsis-icon">
+                                <state key="normal">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -77,7 +77,6 @@
     </scenes>
     <resources>
         <image name="chart-img" width="495" height="577"/>
-        <image name="ellipsis-icon" width="50" height="50"/>
         <image name="profile-img" width="496" height="303"/>
     </resources>
 </document>

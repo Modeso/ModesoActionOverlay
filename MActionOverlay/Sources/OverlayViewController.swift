@@ -36,7 +36,7 @@ class OverlayViewController: UIViewController {
      The transition duration
      Defaults to `0.5`
      */
-    open var duration = 0.5
+    var duration = 0.5
     private let buttonWidth: CGFloat = 60
 
     override func viewDidLoad() {
@@ -180,6 +180,7 @@ extension OverlayViewController: UIViewControllerTransitioningDelegate {
         let transition = OverlayTransition()
         transition.startingPoint = overlayViewStartingPoint
         transition.overlayViewColor = overlayViewColor
+        transition.duration = duration
         return transition
     }
 }

@@ -12,7 +12,7 @@ import MActionOverlay
 class ViewController: UIViewController {
 
     @IBOutlet weak var actionButton: ActionButton!
-    @IBOutlet weak var grayView: UIView!
+    @IBOutlet weak var actionOverlayContainer: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
 
         actionButton.parentViewController = self
-        actionButton.targetView = grayView
+        actionButton.targetView = actionOverlayContainer
         actionButton.overlayViewDelegate = self
         actionButton.overlayButtonsNumber = 3
         actionButton.overlayButtonsIds = [1, 2, 3]

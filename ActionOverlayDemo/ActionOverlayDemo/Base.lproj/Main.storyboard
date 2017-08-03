@@ -67,7 +67,7 @@
                     </view>
                     <connections>
                         <outlet property="actionButton" destination="dep-FV-DMz" id="gvc-Yt-4Yg"/>
-                        <outlet property="grayView" destination="CXe-2f-mgd" id="fxc-95-VG3"/>
+                        <outlet property="actionOverlayContainer" destination="CXe-2f-mgd" id="ag2-sK-UsN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vod-Dq-tMJ" sceneMemberID="firstResponder"/>

@@ -70,6 +70,8 @@ open class ActionButton: UIButton {
         vc.buttonsNumber = overlayButtonsNumber
         vc.buttonsIds = overlayButtonsIds
         vc.buttonImages = overlayButtonsImages
+        vc.overlayViewStartingPoint = targetView.center
+        vc.overlayViewColor = self.backgroundColor
         return vc
     }
 

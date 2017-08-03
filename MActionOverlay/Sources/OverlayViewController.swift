@@ -28,6 +28,8 @@ class OverlayViewController: UIViewController {
     private var buttonsCount = 0
     private var buttons: [UIButton] = []
     var delegate: OverlayViewDelegate?
+    var overlayViewStartingPoint: CGPoint!
+    var overlayViewColor: UIColor!
 
     private var closeButton: UIButton!
     /**
@@ -36,6 +38,12 @@ class OverlayViewController: UIViewController {
      */
     open var duration = 0.5
     private let buttonWidth: CGFloat = 60
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        self.transitioningDelegate = self
+    }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -162,6 +170,17 @@ class OverlayViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         delegate?.showActionButton()
+    }
+}
+
+//MARK:- UIViewControllerTransitioningDelegate methods
+extension OverlayViewController: UIViewControllerTransitioningDelegate {
+    
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        let transition = OverlayTransition()
+        transition.startingPoint = overlayViewStartingPoint
+        transition.overlayViewColor = overlayViewColor
+        return transition
     }
 }
 

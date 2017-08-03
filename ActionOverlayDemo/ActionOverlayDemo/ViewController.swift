@@ -12,10 +12,8 @@ import MActionOverlay
 class ViewController: UIViewController {
 
     @IBOutlet weak var actionButton: ActionButton!
-
-    var transition: OverlayTransition!
-    
     @IBOutlet weak var grayView: UIView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,7 +22,6 @@ class ViewController: UIViewController {
         actionButton.tintColor = UIColor.white
         actionButton.imageEdgeInsets = UIEdgeInsetsMake(15, 15, 15, 15)
         
-        transition = OverlayTransition()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -32,22 +29,13 @@ class ViewController: UIViewController {
 
         actionButton.parentViewController = self
         actionButton.targetView = grayView
-        actionButton.transitionDelegate = self
         actionButton.overlayViewDelegate = self
         actionButton.overlayButtonsNumber = 3
         actionButton.overlayButtonsIds = [1, 2, 3]
         actionButton.overlayButtonsImages = ["camera-icon", "share-icon", "cloud-icon"]
     }
 }
-//MARK:- UIViewControllerTransitioningDelegate methods
-extension ViewController: UIViewControllerTransitioningDelegate {
-    
-    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        transition.startingPoint = self.grayView.center
-        transition.overlayViewColor = actionButton.backgroundColor!
-        return transition
-    }
-}
+
 //MARK:- OverlayViewDelegate methods
 extension ViewController: OverlayViewDelegate {
     func showActionButton() {

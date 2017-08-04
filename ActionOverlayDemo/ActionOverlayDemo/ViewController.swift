@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var profileImg: UIImageView!
     @IBOutlet weak var chartImg: UIImageView!
 
+    var transition: OverlayTransition!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,20 +25,30 @@ class ViewController: UIViewController {
         actionButton.setImage(img, for: .normal)
         actionButton.tintColor = UIColor.white
         actionButton.imageEdgeInsets = UIEdgeInsetsMake(15, 15, 15, 15)
-        
+        transition = OverlayTransition()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
         actionButton.parentViewController = self
-        actionButton.targetView = imgView
+        actionButton.targetView = chartImg
         actionButton.overlayViewDelegate = self
         actionButton.overlayButtonsNumber = 3
         actionButton.overlayButtonsIds = [1, 2, 3]
         actionButton.overlayButtonsImages = ["camera-icon", "share-icon", "cloud-icon"]
         actionButton.duration = 0.5
-        print(chartImg)
+        actionButton.transition = transition
+    }
+}
+
+//MARK:- UIViewControllerTransitioningDelegate methods
+extension ViewController: UIViewControllerTransitioningDelegate {
+    
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+
+        print("Foo");
+        return transition
     }
 }
 

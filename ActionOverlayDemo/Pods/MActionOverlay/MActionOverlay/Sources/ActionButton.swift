@@ -21,6 +21,8 @@ open class ActionButton: UIButton {
     open var overlayButtonsNumber: Int!
     open var overlayButtonsIds: [Int]!
     open var overlayButtonsImages: [String]!
+    open var transition: UIViewControllerAnimatedTransitioning?
+    
     /**
      The animation duration
      Defaults to `0.5`
@@ -68,6 +70,7 @@ open class ActionButton: UIButton {
         vc.overlayViewStartingPoint = targetView.center
         vc.overlayViewColor = self.backgroundColor
         vc.duration = duration
+        vc.overlayTransition = transition
         return vc
     }
 

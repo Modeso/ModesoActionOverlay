@@ -39,6 +39,8 @@ class OverlayViewController: UIViewController {
     var duration = 0.5
     private let buttonWidth: CGFloat = 60
 
+    open var overlayTransition: UIViewControllerAnimatedTransitioning?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -177,15 +179,23 @@ class OverlayViewController: UIViewController {
 extension OverlayViewController: UIViewControllerTransitioningDelegate {
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        let transition = OverlayTransition()
+        guard let transition = overlayTransition as? OverlayTransition else {
+            let transition = OverlayTransition()
+            transition.startingPoint = overlayViewStartingPoint
+            transition.overlayViewColor = overlayViewColor
+            transition.duration = duration
+            return transition
+        }
+        
         transition.startingPoint = overlayViewStartingPoint
         transition.overlayViewColor = overlayViewColor
         transition.duration = duration
-        return transition
+        return delegate?.animationController?(forPresented:presented, presenting:presenting, source:source)
+        
     }
 }
 
-public protocol OverlayViewDelegate {
+public protocol OverlayViewDelegate: UIViewControllerTransitioningDelegate {
     func showActionButton()
     func buttonClicked(id: Int)
 }

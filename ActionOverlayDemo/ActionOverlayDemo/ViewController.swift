@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
 
         actionButton.parentViewController = self
-        actionButton.targetView = chartImg
+        actionButton.targetView = actionOverlayContainer
         actionButton.overlayViewDelegate = self
         actionButton.overlayButtonsNumber = 3
         actionButton.overlayButtonsIds = [1, 2, 3]

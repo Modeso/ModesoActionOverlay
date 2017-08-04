@@ -30,6 +30,7 @@ open class OverlayTransition: NSObject {
     open var overlayViewColor: UIColor = .white
     
     open fileprivate(set) var overlayView = UIView()
+
 }
 
 extension OverlayTransition: UIViewControllerAnimatedTransitioning {
@@ -58,9 +59,10 @@ extension OverlayTransition: UIViewControllerAnimatedTransitioning {
         overlayView.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
         overlayView.backgroundColor = overlayViewColor.withAlphaComponent(0.9)
         containerView.addSubview(overlayView)
-        // to limit the overlay view
-        let rect = CGRect(x: 0, y: originalSize.height, width: originalSize.width, height: 360)
-        containerView.mask(withRect: rect, inverse: true)
+        // create mask for the overlay view
+        let lowerMask = CGRect(x: modalControllerView.frame.origin.x, y: modalControllerView.frame.origin.y + originalSize.height, width: originalSize.width, height: containerView.frame.height - originalSize.height)
+        let upperMask = CGRect(x: modalControllerView.frame.origin.x, y: 0, width: originalSize.width, height: modalControllerView.frame.origin.y)
+        containerView.mask(withRects: [upperMask, lowerMask], inverse: true)
 
         modalControllerView.transform = CGAffineTransform(scaleX: 0.001, y: 0.001)
         modalControllerView.layer.cornerRadius = modalControllerView.frame.size.height / 2

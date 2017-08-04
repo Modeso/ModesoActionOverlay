@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var actionButton: ActionButton!
     @IBOutlet weak var actionOverlayContainer: UIView!
 
+    var transition: OverlayTransition!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +23,7 @@ class ViewController: UIViewController {
         actionButton.setImage(img, for: .normal)
         actionButton.tintColor = UIColor.white
         actionButton.imageEdgeInsets = UIEdgeInsetsMake(15, 15, 15, 15)
-        
+        transition = OverlayTransition()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -34,6 +36,17 @@ class ViewController: UIViewController {
         actionButton.overlayButtonsIds = [1, 2, 3]
         actionButton.overlayButtonsImages = ["camera-icon", "share-icon", "cloud-icon"]
         actionButton.duration = 0.5
+        actionButton.transition = transition
+    }
+}
+
+//MARK:- UIViewControllerTransitioningDelegate methods
+extension ViewController: UIViewControllerTransitioningDelegate {
+    
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+
+        print("Foo");
+        return transition
     }
 }
 

@@ -12,10 +12,12 @@ import MActionOverlay
 class ViewController: UIViewController {
 
     @IBOutlet weak var actionButton: ActionButton!
+    @IBOutlet weak var actionOverlayContainer: UIView!
+    @IBOutlet weak var profileImg: UIImageView!
+    @IBOutlet weak var chartImg: UIImageView!
 
     var transition: OverlayTransition!
     
-    @IBOutlet weak var grayView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,7 +25,6 @@ class ViewController: UIViewController {
         actionButton.setImage(img, for: .normal)
         actionButton.tintColor = UIColor.white
         actionButton.imageEdgeInsets = UIEdgeInsetsMake(15, 15, 15, 15)
-        
         transition = OverlayTransition()
     }
     
@@ -31,23 +32,26 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
 
         actionButton.parentViewController = self
-        actionButton.targetView = grayView
-        actionButton.transitionDelegate = self
+        actionButton.targetView = chartImg
         actionButton.overlayViewDelegate = self
         actionButton.overlayButtonsNumber = 3
         actionButton.overlayButtonsIds = [1, 2, 3]
         actionButton.overlayButtonsImages = ["camera-icon", "share-icon", "cloud-icon"]
+        actionButton.duration = 0.5
+        actionButton.transition = transition
     }
 }
+
 //MARK:- UIViewControllerTransitioningDelegate methods
 extension ViewController: UIViewControllerTransitioningDelegate {
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        transition.startingPoint = self.grayView.center
-        transition.overlayViewColor = actionButton.backgroundColor!
+
+        print("Foo");
         return transition
     }
 }
+
 //MARK:- OverlayViewDelegate methods
 extension ViewController: OverlayViewDelegate {
     func showActionButton() {

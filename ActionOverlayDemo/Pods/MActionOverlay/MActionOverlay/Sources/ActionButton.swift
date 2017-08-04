@@ -10,10 +10,6 @@ import UIKit
 
 open class ActionButton: UIButton {
 
-    /**
-     The transitionDelegate
-     */
-    open var transitionDelegate: UIViewControllerTransitioningDelegate?
     open var overlayViewDelegate: OverlayViewDelegate?
     /**
      The original point which button will return to after the overlayview disappearance
@@ -25,6 +21,8 @@ open class ActionButton: UIButton {
     open var overlayButtonsNumber: Int!
     open var overlayButtonsIds: [Int]!
     open var overlayButtonsImages: [String]!
+    open var transition: UIViewControllerAnimatedTransitioning?
+    
     /**
      The animation duration
      Defaults to `0.5`
@@ -65,11 +63,14 @@ open class ActionButton: UIButton {
         vc.view.frame = CGRect(x: 0, y: 0, width: targetView.frame.width, height: targetView.frame.height)
         vc.view.bounds = CGRect(x: 0, y: 0, width: targetView.frame.width, height: targetView.frame.height)
         vc.modalPresentationStyle = .custom
-        vc.transitioningDelegate = transitionDelegate
         vc.delegate = overlayViewDelegate
         vc.buttonsNumber = overlayButtonsNumber
         vc.buttonsIds = overlayButtonsIds
         vc.buttonImages = overlayButtonsImages
+        vc.overlayViewStartingPoint = targetView.center
+        vc.overlayViewColor = self.backgroundColor
+        vc.duration = duration
+        vc.overlayTransition = transition
         return vc
     }
 

@@ -68,6 +68,8 @@
                     <connections>
                         <outlet property="actionButton" destination="dep-FV-DMz" id="gvc-Yt-4Yg"/>
                         <outlet property="actionOverlayContainer" destination="CXe-2f-mgd" id="ag2-sK-UsN"/>
+                        <outlet property="chartImg" destination="8VH-2R-ihj" id="vlp-ll-kSy"/>
+                        <outlet property="profileImg" destination="Afm-5j-FT0" id="cnV-zf-MeX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vod-Dq-tMJ" sceneMemberID="firstResponder"/>

@@ -13,6 +13,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var actionButton: ActionButton!
     @IBOutlet weak var actionOverlayContainer: UIView!
+    @IBOutlet weak var profileImg: UIImageView!
+    @IBOutlet weak var chartImg: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,12 +30,13 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
 
         actionButton.parentViewController = self
-        actionButton.targetView = actionOverlayContainer
+        actionButton.targetView = imgView
         actionButton.overlayViewDelegate = self
         actionButton.overlayButtonsNumber = 3
         actionButton.overlayButtonsIds = [1, 2, 3]
         actionButton.overlayButtonsImages = ["camera-icon", "share-icon", "cloud-icon"]
         actionButton.duration = 0.5
+        print(chartImg)
     }
 }
 

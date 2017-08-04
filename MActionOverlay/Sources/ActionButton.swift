@@ -31,11 +31,10 @@ open class ActionButton: UIButton {
         super.awakeFromNib()
         
         self.layer.cornerRadius = self.frame.height/2
-        self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(buttonClicked(_:))))
-        
+        self.addTarget(self, action: #selector(buttonClicked), for: .touchUpInside)
     }
 
-    func buttonClicked(_ sender: UITapGestureRecognizer) {
+    func buttonClicked() {
 
         actionButtonOrigin = self.frame.origin
         UIView.animate(withDuration: duration, animations: {
@@ -58,8 +57,7 @@ open class ActionButton: UIButton {
     
     func instantiateOverlayView() -> OverlayViewController{
         let vc = OverlayViewController()
-        vc.view.frame = CGRect(x: 0, y: 0, width: targetView.frame.width, height: targetView.frame.height)
-        vc.view.bounds = CGRect(x: 0, y: 0, width: targetView.frame.width, height: targetView.frame.height)
+        vc.view.frame = CGRect(x: targetView.frame.origin.x, y: targetView.frame.origin.y, width: targetView.frame.width, height: targetView.frame.height)
         vc.modalPresentationStyle = .custom
         vc.delegate = overlayViewDelegate
         vc.buttonsNumber = overlayButtonsNumber

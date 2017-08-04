@@ -11,12 +11,12 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   MActionOverlay:
-    :commit: 1362018a6bc852f4895e5313e48fd5470bdf98a8
+    :commit: f49cfe07c72800cbf82569730f7df07bdef35c56
     :git: https://github.com/Modeso/MActionOverlay.git
 
 SPEC CHECKSUMS:
   MActionOverlay: 2ea7a753315b744ee16be3fa301fcc7d0e17d6dd
 
-PODFILE CHECKSUM: 31018edd444e85896e31d5937c82995ec6d6e15e
+PODFILE CHECKSUM: 3f2f32d0aff0e8ffbc24b46c9f38f0f28db91bc3
 
 COCOAPODS: 1.2.1

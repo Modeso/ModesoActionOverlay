@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   Open Modal ViewController which containing dynamic number of action buttons (form 1 to 5) with transition animation to overlay another view.
                    DESC
 
-  s.homepage     = "https://github.com/Modeso/Modeso/ModesoActionOverlay"
+  s.homepage     = "https://github.com/Modeso/ModesoActionOverlay"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/Modeso/Modeso/ModesoActionOverlay.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/Modeso/ModesoActionOverlay.git", :tag => s.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

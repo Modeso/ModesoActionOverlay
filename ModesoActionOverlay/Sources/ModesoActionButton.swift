@@ -1,6 +1,6 @@
 //
-//  ActionButton.swift
-//  MActionOverlay
+//  ModesoActionButton.swift
+//  ModesoActionOverlay
 //
 //  Created by Reem Hesham on 7/24/17.
 //  Copyright © 2017 Modeso. All rights reserved.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class ActionButton: UIButton {
+open class ModesoActionButton: UIButton {
 
     open var overlayViewDelegate: OverlayViewDelegate?
     /**
@@ -57,8 +57,8 @@ open class ActionButton: UIButton {
         })
     }
     
-    func instantiateOverlayView() -> OverlayViewController{
-        let vc = OverlayViewController()
+    func instantiateOverlayView() -> ModesoActionOverlayViewController{
+        let vc = ModesoActionOverlayViewController()
         vc.view.frame = CGRect(x: targetView.frame.origin.x, y: targetView.frame.origin.y, width: targetView.frame.width, height: targetView.frame.height)
         vc.modalPresentationStyle = .custom
         vc.delegate = overlayViewDelegate
@@ -68,7 +68,7 @@ open class ActionButton: UIButton {
         vc.overlayViewStartingPoint = targetView.center
         vc.overlayViewColor = self.backgroundColor
         vc.duration = duration
-        vc.overlayTransition = transition
+        vc.modesoOverlayTransition = transition
         return vc
     }
 

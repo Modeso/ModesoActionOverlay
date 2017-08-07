@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E94F06C91F307D460006A875"
-               BuildableName = "MActionOverlay.framework"
-               BlueprintName = "MActionOverlay"
-               ReferencedContainer = "container:MActionOverlay.xcodeproj">
+               BuildableName = "ModesoActionOverlay.framework"
+               BlueprintName = "ModesoActionOverlay"
+               ReferencedContainer = "container:ModesoActionOverlay.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E94F06C91F307D460006A875"
-            BuildableName = "MActionOverlay.framework"
-            BlueprintName = "MActionOverlay"
-            ReferencedContainer = "container:MActionOverlay.xcodeproj">
+            BuildableName = "ModesoActionOverlay.framework"
+            BlueprintName = "ModesoActionOverlay"
+            ReferencedContainer = "container:ModesoActionOverlay.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -64,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E94F06C91F307D460006A875"
-            BuildableName = "MActionOverlay.framework"
-            BlueprintName = "MActionOverlay"
-            ReferencedContainer = "container:MActionOverlay.xcodeproj">
+            BuildableName = "ModesoActionOverlay.framework"
+            BlueprintName = "ModesoActionOverlay"
+            ReferencedContainer = "container:ModesoActionOverlay.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

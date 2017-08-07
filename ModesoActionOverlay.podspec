@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint MActionOverlay.podspec' to ensure this is a
+#  Be sure to run `pod spec lint ModesoActionOverlay.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "MActionOverlay"
+  s.name         = "ModesoActionOverlay"
   s.version      = "1.0.0"
   s.summary      = "Open overlayView with action buttons."
 
@@ -92,9 +92,9 @@ Pod::Spec.new do |s|
   #
 
 
-  s.source_files = 'MActionOverlay/Sources/**/*'
+  s.source_files = 'ModesoActionOverlay/Sources/**/*'
   s.exclude_files = "Classes/Exclude"
-  s.resources = 'MActionOverlay/Sources/**/*'
+  s.resources = 'ModesoActionOverlay/Sources/**/*'
   # s.public_header_files = "Classes/**/*.h"
 
 

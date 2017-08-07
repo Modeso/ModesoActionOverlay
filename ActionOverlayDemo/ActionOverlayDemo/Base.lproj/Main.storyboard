@@ -40,7 +40,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chart-img" translatesAutoresizingMaskIntoConstraints="NO" id="8VH-2R-ihj">
                                 <rect key="frame" x="0.0" y="264" width="375" height="403"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dep-FV-DMz" customClass="ActionButton" customModule="MActionOverlay">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dep-FV-DMz" customClass="ModesoActionButton" customModule="ModesoActionOverlay">
                                 <rect key="frame" x="314" y="239" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.95719110969999999" green="0.10473001749999999" blue="0.3090619147" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>

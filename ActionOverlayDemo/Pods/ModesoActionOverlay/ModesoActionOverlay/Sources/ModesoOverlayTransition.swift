@@ -1,7 +1,7 @@
 
 //
-//  OverlayTransition.swift
-//  MActionOverlay
+//  ModesoOverlayTransition.swift
+//  ModesoActionOverlay
 //
 //  Created by Reem Hesham on 7/24/17.
 //  Copyright © 2017 Modeso. All rights reserved.
@@ -9,7 +9,7 @@
 
 import UIKit
 
-open class OverlayTransition: NSObject {
+open class ModesoOverlayTransition: NSObject {
     /**
      The overlayView starts from this point
      */
@@ -33,7 +33,7 @@ open class OverlayTransition: NSObject {
 
 }
 
-extension OverlayTransition: UIViewControllerAnimatedTransitioning {
+extension ModesoOverlayTransition: UIViewControllerAnimatedTransitioning {
     
     // MARK: - UIViewControllerAnimatedTransitioning delegate methods
     
@@ -87,7 +87,7 @@ extension OverlayTransition: UIViewControllerAnimatedTransitioning {
     }
 }
 
-private extension OverlayTransition {
+private extension ModesoOverlayTransition {
     func frameForoverlayView(_ originalSize: CGSize, start: CGPoint) -> CGRect {
         print(originalSize)
         let lengthX = fmax(start.x, originalSize.width - start.x)

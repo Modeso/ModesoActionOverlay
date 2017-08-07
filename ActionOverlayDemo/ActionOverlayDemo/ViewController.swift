@@ -7,16 +7,16 @@
 //
 
 import UIKit
-import MActionOverlay
+import ModesoActionOverlay
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var actionButton: ActionButton!
+    @IBOutlet weak var actionButton: ModesoActionButton!
     @IBOutlet weak var actionOverlayContainer: UIView!
     @IBOutlet weak var profileImg: UIImageView!
     @IBOutlet weak var chartImg: UIImageView!
 
-    var transition: OverlayTransition!
+    var transition: ModesoOverlayTransition!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         actionButton.setImage(img, for: .normal)
         actionButton.tintColor = UIColor.white
         actionButton.imageEdgeInsets = UIEdgeInsetsMake(15, 15, 15, 15)
-        transition = OverlayTransition()
+        transition = ModesoOverlayTransition()
     }
     
     override func viewDidAppear(_ animated: Bool) {

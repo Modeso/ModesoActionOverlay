@@ -1,6 +1,6 @@
 //
 //  UIView+extension.swift
-//  MActionOverlay
+//  ModesoActionOverlay
 //
 //  Created by Reem Hesham on 7/24/17.
 //  Copyright © 2017 Modeso. All rights reserved.

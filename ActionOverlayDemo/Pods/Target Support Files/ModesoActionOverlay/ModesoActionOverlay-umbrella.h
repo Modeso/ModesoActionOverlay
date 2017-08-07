@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double MActionOverlayVersionNumber;
-FOUNDATION_EXPORT const unsigned char MActionOverlayVersionString[];
+FOUNDATION_EXPORT double ModesoActionOverlayVersionNumber;
+FOUNDATION_EXPORT const unsigned char ModesoActionOverlayVersionString[];
 

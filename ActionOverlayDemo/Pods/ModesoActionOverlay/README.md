@@ -13,7 +13,10 @@
 
 MActionOverlay is a "more options" button library written in Swift. It opens an overlay view with dynamic number of action buttons (1 to 5 buttons) with transition animation.
 
-<img src="https://github.com/Modeso/MActionOverlay/blob/master/MActionOverlayGif.gif" alt="GifDemo">
+![](https://github.com/Modeso/MActionOverlay/blob/master/MActionOverlayGif.gif)
+
+![](https://github.com/Modeso/MActionOverlay/blob/master/MActionOverlayGif_2.gif)
+![](https://github.com/Modeso/MActionOverlay/blob/master/MActionOverlayGif_3.gif)
 
 - [Requirements](#requirements)
 - [Installation](#installation)

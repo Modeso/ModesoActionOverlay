@@ -1,6 +1,6 @@
 //
-//  OverlayViewController.swift
-//  MActionOverlay
+//  ModesoActionOverlayViewController.swift
+//  ModesoActionOverlay
 //
 //  Created by Reem Hesham on 7/24/17.
 //  Copyright © 2017 Modeso. All rights reserved.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OverlayViewController: UIViewController {
+class ModesoActionOverlayViewController: UIViewController {
 
     /**
      The presented buttons numbers with range 1..5
@@ -39,7 +39,7 @@ class OverlayViewController: UIViewController {
     var duration = 0.5
     private let buttonWidth: CGFloat = 60
 
-    open var overlayTransition: UIViewControllerAnimatedTransitioning?
+    open var modesoOverlayTransition: UIViewControllerAnimatedTransitioning?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -176,11 +176,11 @@ class OverlayViewController: UIViewController {
 }
 
 //MARK:- UIViewControllerTransitioningDelegate methods
-extension OverlayViewController: UIViewControllerTransitioningDelegate {
+extension ModesoActionOverlayViewController: UIViewControllerTransitioningDelegate {
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        guard let transition = overlayTransition as? OverlayTransition else {
-            let transition = OverlayTransition()
+        guard let transition = modesoOverlayTransition as? ModesoOverlayTransition else {
+            let transition = ModesoOverlayTransition()
             transition.startingPoint = overlayViewStartingPoint
             transition.overlayViewColor = overlayViewColor
             transition.duration = duration

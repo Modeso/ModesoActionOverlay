@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "summary": "Open overlayView with action buttons.",
   "description": "Open Modal ViewController which containing dynamic number of action buttons (form 1 to 5) with transition animation to overlay another view.",
-  "homepage": "https://github.com/Modeso/MActionOverlay",
+  "homepage": "https://github.com/Modeso/ModesoActionOverlay",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -15,7 +15,7 @@
     "ios": "8.0"
   },
   "source": {
-    "git": "https://github.com/Modeso/MActionOverlay.git",
+    "git": "https://github.com/Modeso/ModesoActionOverlay.git",
     "tag": "1.0.0"
   },
   "source_files": "ModesoActionOverlay/Sources/**/*",

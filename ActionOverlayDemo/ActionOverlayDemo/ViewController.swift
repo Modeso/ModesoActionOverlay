@@ -46,8 +46,6 @@ class ViewController: UIViewController {
 extension ViewController: UIViewControllerTransitioningDelegate {
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-
-        print("Foo");
         return transition
     }
 }

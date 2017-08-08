@@ -19,22 +19,7 @@ extension UIView {
             maskLayer.fillRule = kCAFillRuleEvenOdd
         }
         
-        maskLayer.path = path.cgPath
-        
-        self.layer.mask = maskLayer
-    }
-    
-    func mask(withPath path: UIBezierPath, inverse: Bool = false) {
-        let path = path
-        let maskLayer = CAShapeLayer()
-        
-        if inverse {
-            path.append(UIBezierPath(rect: self.bounds))
-            maskLayer.fillRule = kCAFillRuleEvenOdd
-        }
-        
-        maskLayer.path = path.cgPath
-        
+        maskLayer.path = path.cgPath        
         self.layer.mask = maskLayer
     }
 
@@ -51,7 +36,6 @@ extension UIView {
         }
         
         maskLayer.path = path.cgPath
-        
         self.layer.mask = maskLayer
     }
 }

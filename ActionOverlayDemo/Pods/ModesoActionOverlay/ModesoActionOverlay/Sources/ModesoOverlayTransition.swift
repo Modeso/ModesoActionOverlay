@@ -53,7 +53,7 @@ extension ModesoOverlayTransition: UIViewControllerAnimatedTransitioning {
         let originalSize = modalControllerView.frame.size
         // create the overlay view which start from the center of the modal controller view
         overlayView = UIView()
-        overlayView.frame = frameForoverlayView(originalSize, start: startingPoint)
+        overlayView.frame = frameForOverlayView(originalSize, start: startingPoint)
         overlayView.layer.cornerRadius = overlayView.frame.size.height / 2
         overlayView.center = startingPoint
         overlayView.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
@@ -88,8 +88,7 @@ extension ModesoOverlayTransition: UIViewControllerAnimatedTransitioning {
 }
 
 private extension ModesoOverlayTransition {
-    func frameForoverlayView(_ originalSize: CGSize, start: CGPoint) -> CGRect {
-        print(originalSize)
+    func frameForOverlayView(_ originalSize: CGSize, start: CGPoint) -> CGRect {
         let lengthX = fmax(start.x, originalSize.width - start.x)
         let lengthY = fmax(start.y, originalSize.height - start.y)
         let offset = sqrt(lengthX * lengthX + lengthY * lengthY) * 2

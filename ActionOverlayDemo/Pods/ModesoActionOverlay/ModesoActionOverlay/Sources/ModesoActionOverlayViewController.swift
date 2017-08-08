@@ -8,6 +8,12 @@
 
 import UIKit
 
+
+public protocol OverlayViewDelegate: UIViewControllerTransitioningDelegate {
+    func showActionButton()
+    func buttonClicked(id: Int)
+}
+
 class ModesoActionOverlayViewController: UIViewController {
 
     /**
@@ -25,22 +31,25 @@ class ModesoActionOverlayViewController: UIViewController {
      */
     open var buttonImages: [String]?
     open var buttonsIds: [Int]?
+    
     private var buttonsCount = 0
     private var buttons: [UIButton] = []
+    private var closeButton: UIButton!
+    private let buttonWidth: CGFloat = 60
+    
     var delegate: OverlayViewDelegate?
     var overlayViewStartingPoint: CGPoint!
     var overlayViewColor: UIColor!
 
-    private var closeButton: UIButton!
     /**
      The transition duration
      Defaults to `0.5`
      */
     var duration = 0.5
-    private let buttonWidth: CGFloat = 60
-
+    
     open var modesoOverlayTransition: UIViewControllerAnimatedTransitioning?
     
+    //MARK:- View cycles
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -69,7 +78,13 @@ class ModesoActionOverlayViewController: UIViewController {
         
     }
 
-    func addButton(buttonImage: String, count: Int) {
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        delegate?.showActionButton()
+    }
+    
+    //MARK:- Private helpers
+    fileprivate func addButton(buttonImage: String, count: Int) {
 
         let newButton = UIButton(frame: CGRect(x: 0, y: 0, width: buttonWidth, height: buttonWidth))
         newButton.backgroundColor = UIColor.white.withAlphaComponent(0.15)
@@ -105,7 +120,7 @@ class ModesoActionOverlayViewController: UIViewController {
 
         UIView.animate(withDuration: 0.10, animations: {
             newButton.transform = CGAffineTransform.identity
-        }) { (_) in
+        }) { [unowned self] (_) in
             self.buttonsCount += 1
             if self.buttonsCount < buttonsNumber {
                 guard  let buttonImages = self.buttonImages else {
@@ -117,7 +132,7 @@ class ModesoActionOverlayViewController: UIViewController {
 
     }
 
-    func addCloseButton() -> UIButton {
+    fileprivate func addCloseButton() -> UIButton {
         let closeButton = UIButton()
         closeButton.frame = CGRect(x: 0, y: 0, width: 25, height: 25)
         let img = UIImage(named: "delete-icon")?.withRenderingMode(.alwaysTemplate)
@@ -137,7 +152,7 @@ class ModesoActionOverlayViewController: UIViewController {
         return closeButton
     }
     
-    func closeOverlayView() {
+    @objc fileprivate func closeOverlayView() {
         closeButton.transform = CGAffineTransform(rotationAngle: -180)
         buttonsCount = self.buttons.count - 1
         UIView.animate(withDuration: 0.5, animations: {
@@ -147,31 +162,26 @@ class ModesoActionOverlayViewController: UIViewController {
         removeButton()
     }
     
-    func removeButton() {
+    private func removeButton() {
         UIView.animate(withDuration: 0.10, animations: {
             self.buttons[self.buttonsCount].transform = CGAffineTransform(scaleX: 0.001, y: 0.001)
             
-        }) { (_) in
+        }) { [unowned self] (_) in
             self.buttonsCount -= 1
             if self.buttonsCount >= 0 {
                 self.removeButton()
             } else {
                 UIView.animate(withDuration: 0.10, animations: {
                     self.view.alpha = 0
-                }) { (_) in
+                }) { [unowned self] (_) in
                     self.dismiss(animated: false, completion: nil)
                 }
             }
         }
     }
 
-    func overlayButtonClicked(_ sender: UIButton) {
+    @objc fileprivate func overlayButtonClicked(_ sender: UIButton) {
         delegate?.buttonClicked(id: sender.tag)
-    }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        delegate?.showActionButton()
     }
 }
 
@@ -193,9 +203,4 @@ extension ModesoActionOverlayViewController: UIViewControllerTransitioningDelega
         return delegate?.animationController?(forPresented:presented, presenting:presenting, source:source)
         
     }
-}
-
-public protocol OverlayViewDelegate: UIViewControllerTransitioningDelegate {
-    func showActionButton()
-    func buttonClicked(id: Int)
 }

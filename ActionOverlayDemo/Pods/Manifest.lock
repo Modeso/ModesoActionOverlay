@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   ModesoActionOverlay:
-    :commit: 18c002fca827e44ae411eff8330c3db5857d4771
+    :commit: e0c38e9b9cc985d89829e362685270b0b4ac60ec
     :git: https://github.com/Modeso/ModesoActionOverlay.git
 
 SPEC CHECKSUMS:

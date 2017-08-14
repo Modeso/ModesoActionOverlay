@@ -31,7 +31,7 @@ class ModesoActionOverlayViewController: UIViewController {
      */
     var buttonImages: [String]?
     var buttonsIds: [Int]?
-    var closeButtonIcon: String = "delete-icon"
+    var closeButtonIcon: String?
     
     private var buttonsCount = 0
     private var buttons: [UIButton] = []
@@ -136,8 +136,10 @@ class ModesoActionOverlayViewController: UIViewController {
     fileprivate func addCloseButton() -> UIButton {
         let closeButton = UIButton()
         closeButton.frame = CGRect(x: 0, y: 0, width: 25, height: 25)
-        let img = UIImage(named: closeButtonIcon)?.withRenderingMode(.alwaysTemplate)
-        closeButton.setImage(img, for: .normal)
+        if let closeButtonIcon = closeButtonIcon {
+            let img = UIImage(named: closeButtonIcon)?.withRenderingMode(.alwaysTemplate)
+            closeButton.setImage(img, for: .normal)
+        }
         closeButton.tintColor = UIColor.white
         closeButton.imageEdgeInsets = UIEdgeInsetsMake(5, 5, 5, 5)
         closeButton.translatesAutoresizingMaskIntoConstraints = false

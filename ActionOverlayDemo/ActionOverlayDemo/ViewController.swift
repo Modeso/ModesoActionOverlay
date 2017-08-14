@@ -37,6 +37,7 @@ class ViewController: UIViewController {
         actionButton.overlayButtonsNumber = 3
         actionButton.overlayButtonsIds = [1, 2, 3]
         actionButton.overlayButtonsImages = ["camera-icon", "share-icon", "cloud-icon"]
+        actionButton.closeButtonIcon = "delete-icon"
         actionButton.duration = 0.5
         actionButton.transition = transition
     }

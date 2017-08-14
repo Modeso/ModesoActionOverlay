@@ -22,6 +22,7 @@ open class ModesoActionButton: UIButton {
     open var overlayButtonsIds: [Int]!
     open var overlayButtonsImages: [String]!
     open var transition: UIViewControllerAnimatedTransitioning?
+    open var closeButtonIcon: String!
     
     /**
      The animation duration
@@ -65,6 +66,7 @@ open class ModesoActionButton: UIButton {
         vc.buttonsNumber = overlayButtonsNumber
         vc.buttonsIds = overlayButtonsIds
         vc.buttonImages = overlayButtonsImages
+        vc.closeButtonIcon = closeButtonIcon
         vc.overlayViewStartingPoint = targetView.center
         vc.overlayViewColor = self.backgroundColor
         vc.duration = duration

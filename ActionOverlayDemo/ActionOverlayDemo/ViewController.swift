@@ -25,6 +25,12 @@ class ViewController: UIViewController {
         actionButton.setImage(img, for: .normal)
         actionButton.tintColor = UIColor.white
         actionButton.imageEdgeInsets = UIEdgeInsetsMake(15, 15, 15, 15)
+        // Shadow and Radius
+        actionButton.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        actionButton.layer.shadowOffset = CGSize(width: 0, height: 1)
+        actionButton.layer.shadowOpacity = 1.0
+        actionButton.layer.shadowRadius = 0.0
+        actionButton.layer.masksToBounds = false
         transition = ModesoOverlayTransition()
     }
     
@@ -38,7 +44,7 @@ class ViewController: UIViewController {
         actionButton.overlayButtonsIds = [1, 2, 3]
         actionButton.overlayButtonsImages = ["camera-icon", "share-icon", "cloud-icon"]
         actionButton.closeButtonIcon = "delete-icon"
-        actionButton.duration = 0.5
+        actionButton.duration = 0.2
         actionButton.transition = transition
     }
 }

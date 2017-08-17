@@ -87,13 +87,14 @@ class ModesoActionOverlayViewController: UIViewController {
     //MARK:- Private helpers
     fileprivate func addButton(buttonImage: String, count: Int) {
         
-        let newButton = UIButton(frame: CGRect(x: 0, y: 0, width: buttonWidth, height: buttonWidth))
+        let newButton = ModesoCustomButton(frame: CGRect(x: 0, y: 0, width: buttonWidth, height: buttonWidth))
         newButton.backgroundColor = UIColor.white.withAlphaComponent(0.15)
         newButton.layer.cornerRadius = newButton.frame.height/2
         newButton.translatesAutoresizingMaskIntoConstraints = false
         let img = UIImage(named: buttonImage)?.withRenderingMode(.alwaysTemplate)
         newButton.setImage(img, for: .normal)
         newButton.tintColor = UIColor.white
+        newButton.adjustsImageWhenHighlighted = false
         newButton.imageEdgeInsets = UIEdgeInsetsMake(20,20,20,20)
         guard  let buttonsIds = buttonsIds else {
             return
@@ -135,13 +136,14 @@ class ModesoActionOverlayViewController: UIViewController {
     
     fileprivate func addCloseButton() -> UIButton {
         let closeButton = UIButton()
-        closeButton.frame = CGRect(x: 0, y: 0, width: 25, height: 25)
+        closeButton.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
         if let closeButtonIcon = closeButtonIcon {
             let img = UIImage(named: closeButtonIcon)?.withRenderingMode(.alwaysTemplate)
             closeButton.setImage(img, for: .normal)
+            closeButton.adjustsImageWhenHighlighted = false
         }
         closeButton.tintColor = UIColor.white
-        closeButton.imageEdgeInsets = UIEdgeInsetsMake(5, 5, 5, 5)
+        closeButton.imageEdgeInsets = UIEdgeInsetsMake(2, 2, 2, 2)
         closeButton.translatesAutoresizingMaskIntoConstraints = false
         closeButton.addTarget(self, action: #selector(closeOverlayView), for: .touchUpInside)
         view.addSubview(closeButton)

@@ -11,6 +11,7 @@
 		E92F45051F30ACB000E2A793 /* ModesoOverlayTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92F45011F30ACB000E2A793 /* ModesoOverlayTransition.swift */; };
 		E92F45061F30ACB000E2A793 /* ModesoActionOverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92F45021F30ACB000E2A793 /* ModesoActionOverlayViewController.swift */; };
 		E92F45071F30ACB000E2A793 /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92F45031F30ACB000E2A793 /* UIView+extension.swift */; };
+		E96D6AFB1F45E1EB00CF1150 /* ModesoCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96D6AFA1F45E1EB00CF1150 /* ModesoCustomButton.swift */; };
 		E977A3171F38912D00228C6F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E977A3151F38912D00228C6F /* Info.plist */; };
 		E977A3181F38912D00228C6F /* ModesoActionOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = E977A3161F38912D00228C6F /* ModesoActionOverlay.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -21,6 +22,7 @@
 		E92F45021F30ACB000E2A793 /* ModesoActionOverlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModesoActionOverlayViewController.swift; sourceTree = "<group>"; };
 		E92F45031F30ACB000E2A793 /* UIView+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
 		E94F06CA1F307D460006A875 /* ModesoActionOverlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ModesoActionOverlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E96D6AFA1F45E1EB00CF1150 /* ModesoCustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModesoCustomButton.swift; sourceTree = "<group>"; };
 		E977A3151F38912D00228C6F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ModesoActionOverlay/Info.plist; sourceTree = SOURCE_ROOT; };
 		E977A3161F38912D00228C6F /* ModesoActionOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModesoActionOverlay.h; path = ModesoActionOverlay/ModesoActionOverlay.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -43,6 +45,7 @@
 				E92F45011F30ACB000E2A793 /* ModesoOverlayTransition.swift */,
 				E92F45021F30ACB000E2A793 /* ModesoActionOverlayViewController.swift */,
 				E92F45031F30ACB000E2A793 /* UIView+extension.swift */,
+				E96D6AFA1F45E1EB00CF1150 /* ModesoCustomButton.swift */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -159,6 +162,7 @@
 				E92F45041F30ACB000E2A793 /* ModesoActionButton.swift in Sources */,
 				E92F45071F30ACB000E2A793 /* UIView+extension.swift in Sources */,
 				E92F45051F30ACB000E2A793 /* ModesoOverlayTransition.swift in Sources */,
+				E96D6AFB1F45E1EB00CF1150 /* ModesoCustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

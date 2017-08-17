@@ -40,22 +40,33 @@ open class ModesoActionButton: UIButton {
     func buttonClicked() {
 
         actionButtonOrigin = self.frame.origin
-        UIView.animate(withDuration: duration, animations: {
+//        UIView.animate(withDuration: 0.20, animations: {
             
-            self.center.x = (self.targetView.center.x)
-            self.center.y = self.targetView.center.y
-            self.alpha = 0.9
-        }, completion: { _ in
-            
-            let vc = self.instantiateOverlayView()
-            guard let parentViewController = self.parentViewController else {
-                return
-            }
-            parentViewController.present(vc, animated: true, completion:nil)
-            self.isEnabled = false
-            self.isHidden = true
-            self.frame.origin = self.actionButtonOrigin
-        })
+//            self.center.x = (self.targetView.center.x)
+//            self.center.y = self.targetView.center.y
+            self.animate(view: self, fromPoint: self.center, toPoint: self.targetView.center, completion: {
+                let vc = self.instantiateOverlayView()
+                guard let parentViewController = self.parentViewController else {
+                    return
+                }
+                parentViewController.present(vc, animated: true, completion:nil)
+                self.isEnabled = false
+                self.isHidden = true
+                self.frame.origin = self.actionButtonOrigin
+            })
+//            self.center = self.targetView.center
+//            self.alpha = 0.9
+//        }, completion: { _ in
+//            
+//            let vc = self.instantiateOverlayView()
+//            guard let parentViewController = self.parentViewController else {
+//                return
+//            }
+//            parentViewController.present(vc, animated: true, completion:nil)
+//            self.isEnabled = false
+//            self.isHidden = true
+//            self.frame.origin = self.actionButtonOrigin
+//        })
     }
     
     func instantiateOverlayView() -> ModesoActionOverlayViewController{
@@ -79,9 +90,40 @@ open class ModesoActionButton: UIButton {
         self.isEnabled = true
         self.alpha = 1
         self.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
-        UIView.animate(withDuration: 0.30, animations: {
+        UIView.animate(withDuration: 0.2, animations: {
             self.transform = .identity
         })
+    }
+
+    func animate(view : UIView, fromPoint start : CGPoint, toPoint end: CGPoint, completion: @escaping () -> Void)
+    {
+        // The animation
+        let animation = CAKeyframeAnimation(keyPath: "position")
+        
+        // Animation's path
+        let path = UIBezierPath()
+        
+        // Move the "cursor" to the start
+        path.move(to: start)
+        
+        // Calculate the control points
+        let c1 = CGPoint(x: start.x - 64, y: start.y)
+        let c2 = CGPoint(x: end.x,        y: end.y + 64)
+        
+        // Draw a curve towards the end, using control points
+        path.addCurve(to: end, controlPoint1: c1, controlPoint2: c2)
+        
+        // Use this path as the animation's path (casted to CGPath)
+        animation.path = path.cgPath;
+        
+        // The other animations properties
+        animation.fillMode              = kCAFillModeForwards
+        animation.isRemovedOnCompletion = true
+        animation.duration              = 0.20
+        animation.timingFunction        = CAMediaTimingFunction(name:kCAMediaTimingFunctionEaseIn)
+        self.alpha = 0.9
+        // Apply it
+        view.layer.add(animation, forKey:"trash")
     }
 }
 

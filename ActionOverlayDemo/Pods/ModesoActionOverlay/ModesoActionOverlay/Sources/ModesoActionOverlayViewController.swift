@@ -94,6 +94,7 @@ class ModesoActionOverlayViewController: UIViewController {
         let img = UIImage(named: buttonImage)?.withRenderingMode(.alwaysTemplate)
         newButton.setImage(img, for: .normal)
         newButton.tintColor = UIColor.white
+        newButton.adjustsImageWhenHighlighted = false
         newButton.imageEdgeInsets = UIEdgeInsetsMake(20,20,20,20)
         guard  let buttonsIds = buttonsIds else {
             return
@@ -119,7 +120,7 @@ class ModesoActionOverlayViewController: UIViewController {
         // buttons are displayed in scale transformation after each other
         newButton.transform = CGAffineTransform(scaleX: 0.001, y: 0.001)
         
-        UIView.animate(withDuration: 0.10, animations: {
+        UIView.animate(withDuration: 0.05, animations: {
             newButton.transform = CGAffineTransform.identity
         }) { [unowned self] (_) in
             self.buttonsCount += 1
@@ -135,13 +136,14 @@ class ModesoActionOverlayViewController: UIViewController {
     
     fileprivate func addCloseButton() -> UIButton {
         let closeButton = UIButton()
-        closeButton.frame = CGRect(x: 0, y: 0, width: 25, height: 25)
+        closeButton.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
         if let closeButtonIcon = closeButtonIcon {
             let img = UIImage(named: closeButtonIcon)?.withRenderingMode(.alwaysTemplate)
             closeButton.setImage(img, for: .normal)
+            closeButton.adjustsImageWhenHighlighted = false
         }
         closeButton.tintColor = UIColor.white
-        closeButton.imageEdgeInsets = UIEdgeInsetsMake(5, 5, 5, 5)
+        closeButton.imageEdgeInsets = UIEdgeInsetsMake(2, 2, 2, 2)
         closeButton.translatesAutoresizingMaskIntoConstraints = false
         closeButton.addTarget(self, action: #selector(closeOverlayView), for: .touchUpInside)
         view.addSubview(closeButton)
@@ -166,7 +168,7 @@ class ModesoActionOverlayViewController: UIViewController {
     }
     
     private func removeButton() {
-        UIView.animate(withDuration: 0.10, animations: {
+        UIView.animate(withDuration: 0.05, animations: {
             self.buttons[self.buttonsCount].transform = CGAffineTransform(scaleX: 0.001, y: 0.001)
             
         }) { [unowned self] (_) in
@@ -174,7 +176,7 @@ class ModesoActionOverlayViewController: UIViewController {
             if self.buttonsCount >= 0 {
                 self.removeButton()
             } else {
-                UIView.animate(withDuration: 0.10, animations: {
+                UIView.animate(withDuration: 0.05, animations: {
                     self.view.alpha = 0
                 }) { [unowned self] (_) in
                     self.dismiss(animated: false, completion: nil)
@@ -186,6 +188,7 @@ class ModesoActionOverlayViewController: UIViewController {
     @objc fileprivate func overlayButtonClicked(_ sender: UIButton) {
         delegate?.buttonClicked(id: sender.tag)
     }
+
 }
 
 //MARK:- UIViewControllerTransitioningDelegate methods

@@ -1,4 +1,4 @@
-# MActionOverlay
+# ModesoActionOverlay
 <p align="center">
   <img src="https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAZsAAAAJDM2NTU0MDA1LTA3YmEtNGUyMC05YmZjLTIxMDNlZWZlM2ZkMQ.png">
 </p>
@@ -11,7 +11,7 @@
 [![Platform](https://img.shields.io/badge/Platform-iOS-d3d3d3.svg)]()
 [![Twitter](https://img.shields.io/badge/twitter-@modeso_ch-0B0032.svg?style=flat)](http://twitter.com/AlamofireSF)
 
-MActionOverlay is a "more options" button library written in Swift. It opens an overlay view with dynamic number of action buttons (1 to 5 buttons) with transition animation.
+ModesoActionOverlay is a "more options" button library written in Swift. It opens an overlay view with dynamic number of action buttons (1 to 5 buttons) with transition animation depending on ![Anton Aheichanka](https://dribbble.com/madebyanton)'s ![design](https://dribbble.com/shots/1977070-Profile-Screen-Animation).
 
 ![](https://github.com/Modeso/ModesoActionOverlay/blob/master/ModesoActionOverlayGif.gif)
 
@@ -50,7 +50,7 @@ platform :ios, '9.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'MActionOverlay', :git => 'https://github.com/Modeso/MActionOverlay.git'
+    pod 'ModesoActionOverlay', :git => 'https://github.com/Modeso/ModesoActionOverlay.git'
 end
 ```
 
@@ -71,13 +71,13 @@ $ brew update
 $ brew install carthage
 ```
 
-To integrate MActionOverlay into your Xcode project using Carthage, specify it in your `Cartfile`:
+To integrate ModesoActionOverlay into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "Modeso/MActionOverlay" "master"
+github "Modeso/ModesoActionOverlay" "master"
 ```
 
-Run `carthage update --platform iOS` to build the framework and drag the built `MActionOverlay.framework` into your Xcode project.
+Run `carthage update --platform iOS` to build the framework and drag the built `ModesoActionOverlay.framework` into your Xcode project.
 
 ### Manually
 
@@ -89,16 +89,16 @@ If you prefer not to use either of the aforementioned dependency managers, you c
 
 ### Xib file
 
-<img src="https://github.com/Modeso/MActionOverlay/blob/master/Xib.png" alt="Xib">
+<img src="https://github.com/Modeso/ModesoActionOverlay/blob/master/Xib.png" alt="Xib">
 
 - Add your action button.
 - Change the class of the added button to `ActionButton`
 
 ### Code
 
-In your `ViewController.swift` class import `MActionOverlay`
+In your `ViewController.swift` class import `ModesoActionOverlay`
 ```swift
-import MActionOverlay
+import ModesoActionOverlay
 ```
 Add an outlet of your added button in your `ViewController.swift` class
 ```swift
@@ -113,7 +113,7 @@ Assign it in `viewDidLoad` method
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        overlayTransition = OverlayTransition()
+        transition = ModesoOverlayTransition()
     }
 ```
 Then, set necessary parameters for `actionButton`
@@ -121,32 +121,33 @@ Then, set necessary parameters for `actionButton`
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         actionButton.parentViewController = self
-        actionButton.targetView = grayView
-        actionButton.transitionDelegate = self
+        actionButton.targetView = actionOverlayContainer
         actionButton.overlayViewDelegate = self
         actionButton.overlayButtonsNumber = 3
         actionButton.overlayButtonsIds = [1, 2, 3]
         actionButton.overlayButtonsImages = ["camera-icon", "share-icon", "cloud-icon"]
+        actionButton.closeButtonIcon = "delete-icon"
+        actionButton.duration = 0.5
+        actionButton.transition = transition
     }
 ```
-> `parentViewController`: The view controller which contains your action button and responsible for presenting the modal view controller which contains the options buttons.
-> `targetView`: Your overlayed view.
-> `transitionDelegate`: UIViewControllerTransitioningDelegate for view controller's transition animation.
-> `overlayViewDelegate`: OverlayViewDelegate handle showin action button after dismissing the modal view controller by calling **showActionButton()** method and handle actions of options buttons by calling **buttonClicked(id: Int)** method.<br />
-> `overlayButtonsNumber`: The number of the options buttons inside the modal view controller **1 to 5 buttons**.
-> `overlayButtonsIds`: Array of integers represents the id of each button.<br />
-> `overlayButtonsImages`: Array of strings represents buttons icons' names.
+> `parentViewController`: The view controller which contains your action button and responsible for presenting the modal view controller which contains the options buttons.<br>
+> `targetView`: Your overlayed view.<br>
+> `overlayViewDelegate`: OverlayViewDelegate handle showin action button after dismissing the modal view controller by calling **showActionButton()** method and handle actions of options buttons by calling **buttonClicked(id: Int)** method.<br>
+> `overlayButtonsNumber`: The number of the options buttons inside the modal view controller **1 to 5 buttons**.<br>
+> `overlayButtonsIds`: Array of integers represents the id of each button.<br>
+> `overlayButtonsImages`: Array of strings represents buttons icons' names.<br>
+> `duration`: Repesent the animation duration.<br>
+> `transition`: ModesoOverlayTransition isntance which contains all transition methods 
 
-Then, handle UIViewControllerTransitioningDelegate methods
-set necessary parameters for `overlayTransition` instance
+Then, you can also handle UIViewControllerTransitioningDelegate methods
+if needed.
 ```swift
 //MARK:- UIViewControllerTransitioningDelegate methods
 extension ViewController: UIViewControllerTransitioningDelegate {
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        overlayTransition.startingPoint = self.grayView.center
-        overlayTransition.overlayViewColor = actionButton.backgroundColor!
-        return overlayTransition
+        return transition
     }
 }
 ```

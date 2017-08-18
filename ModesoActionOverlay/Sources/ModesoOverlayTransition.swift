@@ -20,9 +20,9 @@ open class ModesoOverlayTransition: NSObject {
     }
     /**
      The transition duration
-     Defaults to `0.5`
+     Defaults to `0.25`
      */
-    open var duration = 0.5
+    open var duration = 0.25
     
     /**
      The color of the overlayView. Make sure that it matches the action button's background color.
@@ -71,7 +71,7 @@ extension ModesoOverlayTransition: UIViewControllerAnimatedTransitioning {
         containerView.addSubview(modalControllerView)
         
         
-        UIView.animate(withDuration: duration, animations: {
+        UIView.animate(withDuration: duration, delay: 0.0, options: .curveEaseIn, animations: {
             self.overlayView.transform = CGAffineTransform.identity
             self.overlayView.layoutIfNeeded()
 

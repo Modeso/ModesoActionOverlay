@@ -26,9 +26,9 @@ open class ModesoActionButton: UIButton {
     
     /**
      The animation duration
-     Defaults to `0.5`
+     Defaults to `0.25`
      */
-    open var duration = 0.5
+    open var duration = 0.25
 
     override open func awakeFromNib() {
         super.awakeFromNib()
@@ -64,7 +64,7 @@ open class ModesoActionButton: UIButton {
         self.isEnabled = true
         self.alpha = 1
         self.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
-        UIView.animate(withDuration: duration, animations: {
+        UIView.animate(withDuration: duration, delay: 0.0, options: .curveEaseIn, animations: {
             self.transform = .identity
         })
     }
@@ -74,6 +74,7 @@ open class ModesoActionButton: UIButton {
         CATransaction.begin()
         CATransaction.setCompletionBlock({
             self.alpha = 0.9
+            view.layer.removeAnimation(forKey: "move")
             let vc = self.instantiateOverlayView()
             guard let parentViewController = self.parentViewController else {
                 return
@@ -104,7 +105,7 @@ open class ModesoActionButton: UIButton {
         
         // The other animations properties
         animation.fillMode              = kCAFillModeForwards
-        animation.isRemovedOnCompletion = true
+        animation.isRemovedOnCompletion = false
         animation.duration              = duration
         animation.timingFunction        = CAMediaTimingFunction(name:kCAMediaTimingFunctionEaseIn)
         

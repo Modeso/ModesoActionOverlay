@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         actionButton.setImage(img, for: .normal)
         actionButton.tintColor = UIColor.white
         actionButton.imageEdgeInsets = UIEdgeInsetsMake(15, 15, 15, 15)
+        actionButton.adjustsImageWhenHighlighted = false
         // Shadow and Radius
         actionButton.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
         actionButton.layer.shadowOffset = CGSize(width: 0, height: 1)
@@ -38,13 +39,13 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
 
         actionButton.parentViewController = self
-        actionButton.targetView = actionOverlayContainer
+        actionButton.targetView = chartImg
         actionButton.overlayViewDelegate = self
-        actionButton.overlayButtonsNumber = 3
-        actionButton.overlayButtonsIds = [1, 2, 3]
-        actionButton.overlayButtonsImages = ["camera-icon", "share-icon", "cloud-icon"]
-        actionButton.closeButtonIcon = "delete-icon"
-        actionButton.duration = 0.2
+        actionButton.overlayButtonsNumber = 5
+        actionButton.overlayButtonsIds = [1, 2, 3, 4, 5]
+        actionButton.overlayButtonsImages = ["camera-icon", "share-icon", "cloud-icon", "share-icon", "cloud-icon"]
+        actionButton.closeButtonIcon = "close-icon"
+        actionButton.duration = 0.25    
         actionButton.transition = transition
     }
 }

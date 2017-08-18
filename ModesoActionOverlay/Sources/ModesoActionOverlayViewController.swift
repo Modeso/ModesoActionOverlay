@@ -44,9 +44,9 @@ class ModesoActionOverlayViewController: UIViewController {
     
     /**
      The transition duration
-     Defaults to `0.5`
+     Defaults to `0.25`
      */
-    var duration = 0.5
+    var duration = 0.25
     
     open var modesoOverlayTransition: UIViewControllerAnimatedTransitioning?
     
@@ -72,7 +72,7 @@ class ModesoActionOverlayViewController: UIViewController {
         closeButton.alpha = 0
         closeButton.transform = CGAffineTransform(rotationAngle: 180)
         
-        UIView.animate(withDuration: 0.5, animations: {
+        UIView.animate(withDuration: duration, animations: {
             self.closeButton.alpha = 1
             self.closeButton.transform = CGAffineTransform.identity
         })
@@ -120,7 +120,7 @@ class ModesoActionOverlayViewController: UIViewController {
         // buttons are displayed in scale transformation after each other
         newButton.transform = CGAffineTransform(scaleX: 0.001, y: 0.001)
         
-        UIView.animate(withDuration: 0.10, animations: {
+        UIView.animate(withDuration: 0.10, delay: 0.0, options: .curveEaseIn, animations: {
             newButton.transform = CGAffineTransform.identity
         }) { [unowned self] (_) in
             self.buttonsCount += 1
@@ -143,15 +143,15 @@ class ModesoActionOverlayViewController: UIViewController {
             closeButton.adjustsImageWhenHighlighted = false
         }
         closeButton.tintColor = UIColor.white
-        closeButton.imageEdgeInsets = UIEdgeInsetsMake(2, 2, 2, 2)
+        closeButton.imageEdgeInsets = UIEdgeInsetsMake(7, 7, 7, 7)
         closeButton.translatesAutoresizingMaskIntoConstraints = false
         closeButton.addTarget(self, action: #selector(closeOverlayView), for: .touchUpInside)
         view.addSubview(closeButton)
         
         let horizontalLeftConstraint = NSLayoutConstraint(item: closeButton, attribute: NSLayoutAttribute.trailingMargin, relatedBy: NSLayoutRelation.equal, toItem: view, attribute: NSLayoutAttribute.trailingMargin, multiplier: 1, constant: 0)
         let verticalConstraint = NSLayoutConstraint(item: closeButton, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: view, attribute: NSLayoutAttribute.top, multiplier: 1, constant: 20)
-        let widthConstraint = NSLayoutConstraint(item: closeButton, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: 25)
-        let heightConstraint = NSLayoutConstraint(item: closeButton, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: 25)
+        let widthConstraint = NSLayoutConstraint(item: closeButton, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: 40)
+        let heightConstraint = NSLayoutConstraint(item: closeButton, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: 40)
         
         view.addConstraints([horizontalLeftConstraint, verticalConstraint, widthConstraint, heightConstraint])
         return closeButton
@@ -160,7 +160,7 @@ class ModesoActionOverlayViewController: UIViewController {
     @objc fileprivate func closeOverlayView() {
         closeButton.transform = CGAffineTransform(rotationAngle: -180)
         buttonsCount = self.buttons.count - 1
-        UIView.animate(withDuration: 0.5, animations: {
+        UIView.animate(withDuration: duration, animations: {
             self.closeButton.alpha = 0
             self.closeButton.transform = CGAffineTransform.identity
         })
@@ -168,7 +168,7 @@ class ModesoActionOverlayViewController: UIViewController {
     }
     
     private func removeButton() {
-        UIView.animate(withDuration: 0.10, animations: {
+        UIView.animate(withDuration: 0.10, delay: 0.0, options: .curveEaseOut, animations: {
             self.buttons[self.buttonsCount].transform = CGAffineTransform(scaleX: 0.001, y: 0.001)
             
         }) { [unowned self] (_) in
@@ -176,7 +176,7 @@ class ModesoActionOverlayViewController: UIViewController {
             if self.buttonsCount >= 0 {
                 self.removeButton()
             } else {
-                UIView.animate(withDuration: 0.10, animations: {
+                UIView.animate(withDuration: 0.10, delay: 0.0, options: .curveEaseOut, animations: {
                     self.view.alpha = 0
                 }) { [unowned self] (_) in
                     self.dismiss(animated: false, completion: nil)

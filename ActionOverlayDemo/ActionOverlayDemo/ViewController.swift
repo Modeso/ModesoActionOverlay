@@ -39,9 +39,9 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
 
         actionButton.parentViewController = self
-        actionButton.targetView = chartImg
+        actionButton.targetView = actionOverlayContainer
         actionButton.overlayViewDelegate = self
-        actionButton.overlayButtonsNumber = 5
+        actionButton.overlayButtonsNumber = 3
         actionButton.overlayButtonsIds = [1, 2, 3, 4, 5]
         actionButton.overlayButtonsImages = ["camera-icon", "share-icon", "cloud-icon", "share-icon", "cloud-icon"]
         actionButton.closeButtonIcon = "close-icon"

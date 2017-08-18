@@ -6,6 +6,6 @@ target 'ActionOverlayDemo' do
   use_frameworks!
 
 #  pod 'ModesoActionOverlay’, :git => 'https://github.com/Modeso/ModesoActionOverlay.git', :branch => 'Optimization'
-pod 'ModesoActionOverlay’, :path => '/Users/modeso-5/ModesoProjects/ModesoActionOverlay'
+pod 'ModesoActionOverlay’, :path => '../../ModesoActionOverlay'
 
 end

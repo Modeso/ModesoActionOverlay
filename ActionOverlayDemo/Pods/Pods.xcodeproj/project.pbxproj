@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F0EAECDDF2231986A6E48506FEC39A2 /* ModesoOverlayTransition.swift in Resources */ = {isa = PBXBuildFile; fileRef = 04168E6DA4F86A9F6F0C18A7BE794E89 /* ModesoOverlayTransition.swift */; };
-		18C6D4B46C6E186530C01D7BEF40C6EE /* ModesoActionOverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E8824D1C1109C5031F3E30CDA3BC58 /* ModesoActionOverlayViewController.swift */; };
-		19B0AC47DBF1945ED1B6405E2CC21FDA /* ModesoCustomButton.swift in Resources */ = {isa = PBXBuildFile; fileRef = 8750E0D26630D7DBC58BE8DC81A5F534 /* ModesoCustomButton.swift */; };
-		606650C1435DA8D15AF2367FDF6516EF /* ModesoActionButton.swift in Resources */ = {isa = PBXBuildFile; fileRef = 07023DE63EE89E9E7B85A8A5435F69E0 /* ModesoActionButton.swift */; };
-		6612AE98AEDD893CFBE7E0944589AF4F /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6862933C93392B19FBC2C784F3A66DE3 /* UIView+extension.swift */; };
-		77CB9F4C11875BA60CBC9C7B03ADCD24 /* ModesoActionOverlayViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = 07E8824D1C1109C5031F3E30CDA3BC58 /* ModesoActionOverlayViewController.swift */; };
-		8289D0396E32A72619B77AC410614C0E /* ModesoActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07023DE63EE89E9E7B85A8A5435F69E0 /* ModesoActionButton.swift */; };
+		0F0EAECDDF2231986A6E48506FEC39A2 /* ModesoOverlayTransition.swift in Resources */ = {isa = PBXBuildFile; fileRef = CA967D1F11B1D7573470FFE362B1C74B /* ModesoOverlayTransition.swift */; };
+		18C6D4B46C6E186530C01D7BEF40C6EE /* ModesoActionOverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D63422E4AB35EF7351DB4DC78CA3AA /* ModesoActionOverlayViewController.swift */; };
+		19B0AC47DBF1945ED1B6405E2CC21FDA /* ModesoCustomButton.swift in Resources */ = {isa = PBXBuildFile; fileRef = E967DB9531D69ED65D64F14BB1CA921C /* ModesoCustomButton.swift */; };
+		606650C1435DA8D15AF2367FDF6516EF /* ModesoActionButton.swift in Resources */ = {isa = PBXBuildFile; fileRef = 73BEF7E7EFB6EA900275B8AC71B59039 /* ModesoActionButton.swift */; };
+		6612AE98AEDD893CFBE7E0944589AF4F /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BEC395AFF7FB6DB27966C60A190D65 /* UIView+extension.swift */; };
+		77CB9F4C11875BA60CBC9C7B03ADCD24 /* ModesoActionOverlayViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = 09D63422E4AB35EF7351DB4DC78CA3AA /* ModesoActionOverlayViewController.swift */; };
+		8289D0396E32A72619B77AC410614C0E /* ModesoActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BEF7E7EFB6EA900275B8AC71B59039 /* ModesoActionButton.swift */; };
 		8CF7DA48CDCF533B4180444643C7F956 /* Pods-ActionOverlayDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D48F74911B8D49D756E0E04667EDCA91 /* Pods-ActionOverlayDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		91C66AEA3794D84D4953B72A1EF314FE /* ModesoActionOverlay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C34AF5357052DDEB0DC50E7EBC8D7D0C /* ModesoActionOverlay-dummy.m */; };
+		91C66AEA3794D84D4953B72A1EF314FE /* ModesoActionOverlay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CED514CD17AE064056FB71FCEA852999 /* ModesoActionOverlay-dummy.m */; };
 		A58EF59CE042DA8FF49C7BDCC8027B96 /* Pods-ActionOverlayDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B937EBAFB938F58ED5FFFCAFBDD3D9 /* Pods-ActionOverlayDemo-dummy.m */; };
-		AD060DCA158F4648D71782A0B67581CA /* ModesoOverlayTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04168E6DA4F86A9F6F0C18A7BE794E89 /* ModesoOverlayTransition.swift */; };
+		AD060DCA158F4648D71782A0B67581CA /* ModesoOverlayTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA967D1F11B1D7573470FFE362B1C74B /* ModesoOverlayTransition.swift */; };
 		C7C21D3224B4D37E392AACF6B0FA37A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		D96ADEEF0483A42BB6E70E30C5BFAE87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		EC1127A698C2C9FAD7DB19EB93672B9F /* ModesoActionOverlay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB42066EED59DE0210DF45CA6BD82C7 /* ModesoActionOverlay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F2D9462949B396663979E6BF8C09F4E2 /* ModesoCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8750E0D26630D7DBC58BE8DC81A5F534 /* ModesoCustomButton.swift */; };
-		F660F7C7CE33D078E2B43A411DD5996F /* UIView+extension.swift in Resources */ = {isa = PBXBuildFile; fileRef = 6862933C93392B19FBC2C784F3A66DE3 /* UIView+extension.swift */; };
+		EC1127A698C2C9FAD7DB19EB93672B9F /* ModesoActionOverlay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4619E28825C5781C0E82D784AA88647B /* ModesoActionOverlay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2D9462949B396663979E6BF8C09F4E2 /* ModesoCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E967DB9531D69ED65D64F14BB1CA921C /* ModesoCustomButton.swift */; };
+		F660F7C7CE33D078E2B43A411DD5996F /* UIView+extension.swift in Resources */ = {isa = PBXBuildFile; fileRef = 18BEC395AFF7FB6DB27966C60A190D65 /* UIView+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,30 +37,30 @@
 
 /* Begin PBXFileReference section */
 		00B5C2F19DBF33C785E7C1784B340299 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		01790934F87208C87EB9F1D575FAE87D /* ModesoActionOverlay.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ModesoActionOverlay.xcconfig; sourceTree = "<group>"; };
-		04168E6DA4F86A9F6F0C18A7BE794E89 /* ModesoOverlayTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModesoOverlayTransition.swift; sourceTree = "<group>"; };
-		07023DE63EE89E9E7B85A8A5435F69E0 /* ModesoActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModesoActionButton.swift; sourceTree = "<group>"; };
-		07E8824D1C1109C5031F3E30CDA3BC58 /* ModesoActionOverlayViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModesoActionOverlayViewController.swift; sourceTree = "<group>"; };
+		09D63422E4AB35EF7351DB4DC78CA3AA /* ModesoActionOverlayViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModesoActionOverlayViewController.swift; sourceTree = "<group>"; };
 		0A1DAD58B6AF2132B629DFDD1896D3AC /* Pods-ActionOverlayDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ActionOverlayDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		18A2023115AEAD6A403A5A68E6F427C6 /* Pods-ActionOverlayDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ActionOverlayDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1BB42066EED59DE0210DF45CA6BD82C7 /* ModesoActionOverlay-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ModesoActionOverlay-umbrella.h"; sourceTree = "<group>"; };
-		21AC9FD36E2E663077A36AAB850C6757 /* ModesoActionOverlay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ModesoActionOverlay-prefix.pch"; sourceTree = "<group>"; };
+		18BEC395AFF7FB6DB27966C60A190D65 /* UIView+extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
+		393FD4304D64E7927D1FE8ED1F3CC344 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4378B7C808B99F6621C874A6A6F8B098 /* Pods-ActionOverlayDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ActionOverlayDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		45B937EBAFB938F58ED5FFFCAFBDD3D9 /* Pods-ActionOverlayDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ActionOverlayDemo-dummy.m"; sourceTree = "<group>"; };
+		4619E28825C5781C0E82D784AA88647B /* ModesoActionOverlay-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ModesoActionOverlay-umbrella.h"; sourceTree = "<group>"; };
 		486DE1AC01A5EFACD335D59814C1B7FF /* Pods-ActionOverlayDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ActionOverlayDemo.modulemap"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6862933C93392B19FBC2C784F3A66DE3 /* UIView+extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
 		72D80EE1F839E68E0864058973A22A17 /* Pods_ActionOverlayDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ActionOverlayDemo.framework; path = "Pods-ActionOverlayDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		82FE06FEB958DD61EE6A2E8223E7914A /* ModesoActionOverlay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ModesoActionOverlay.modulemap; sourceTree = "<group>"; };
+		73BEF7E7EFB6EA900275B8AC71B59039 /* ModesoActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModesoActionButton.swift; sourceTree = "<group>"; };
 		86FE6DFC1EE6BDBF3EE0CA7293C4364D /* Pods-ActionOverlayDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ActionOverlayDemo-frameworks.sh"; sourceTree = "<group>"; };
-		8750E0D26630D7DBC58BE8DC81A5F534 /* ModesoCustomButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModesoCustomButton.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B1556F0AFD2E742D9B8EAF4439BFE602 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAE094D65EE4C92CD9DEEE8A79B1822C /* ModesoActionOverlay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ModesoActionOverlay.modulemap; sourceTree = "<group>"; };
+		B75D35F11B24D3FADAE5FC86CA4DECC2 /* ModesoActionOverlay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ModesoActionOverlay-prefix.pch"; sourceTree = "<group>"; };
 		B9139DAF2AFC102E9BB05DC54CFFC63E /* Pods-ActionOverlayDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ActionOverlayDemo-resources.sh"; sourceTree = "<group>"; };
-		C34AF5357052DDEB0DC50E7EBC8D7D0C /* ModesoActionOverlay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ModesoActionOverlay-dummy.m"; sourceTree = "<group>"; };
+		C5A18FDB2F7BE4F17D1B8AFA8F8E57CF /* ModesoActionOverlay.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ModesoActionOverlay.xcconfig; sourceTree = "<group>"; };
+		CA967D1F11B1D7573470FFE362B1C74B /* ModesoOverlayTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModesoOverlayTransition.swift; sourceTree = "<group>"; };
+		CED514CD17AE064056FB71FCEA852999 /* ModesoActionOverlay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ModesoActionOverlay-dummy.m"; sourceTree = "<group>"; };
 		D48F74911B8D49D756E0E04667EDCA91 /* Pods-ActionOverlayDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ActionOverlayDemo-umbrella.h"; sourceTree = "<group>"; };
 		D5BF0E1AE989D1E76CE42BEB279DE5E7 /* Pods-ActionOverlayDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ActionOverlayDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DBBD68414827F793FB874A0732F3ED8C /* ModesoActionOverlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ModesoActionOverlay.framework; path = ModesoActionOverlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E967DB9531D69ED65D64F14BB1CA921C /* ModesoCustomButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModesoCustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,78 +83,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A3496530B1E3B2D911FB6C3813A1B79 /* Support Files */ = {
+		102FEB2E5DE8963EFF88A44E02DA3B08 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				B1556F0AFD2E742D9B8EAF4439BFE602 /* Info.plist */,
-				82FE06FEB958DD61EE6A2E8223E7914A /* ModesoActionOverlay.modulemap */,
-				01790934F87208C87EB9F1D575FAE87D /* ModesoActionOverlay.xcconfig */,
-				C34AF5357052DDEB0DC50E7EBC8D7D0C /* ModesoActionOverlay-dummy.m */,
-				21AC9FD36E2E663077A36AAB850C6757 /* ModesoActionOverlay-prefix.pch */,
-				1BB42066EED59DE0210DF45CA6BD82C7 /* ModesoActionOverlay-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "ActionOverlayDemo/Pods/Target Support Files/ModesoActionOverlay";
-			sourceTree = "<group>";
-		};
-		3BA19A233EAF258B1A218AED237D59DB /* ModesoActionOverlay */ = {
-			isa = PBXGroup;
-			children = (
-				54C0AE079D28D170C489A00FE750A006 /* Sources */,
-			);
-			name = ModesoActionOverlay;
-			path = ModesoActionOverlay;
-			sourceTree = "<group>";
-		};
-		54C0AE079D28D170C489A00FE750A006 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				07023DE63EE89E9E7B85A8A5435F69E0 /* ModesoActionButton.swift */,
-				07E8824D1C1109C5031F3E30CDA3BC58 /* ModesoActionOverlayViewController.swift */,
-				8750E0D26630D7DBC58BE8DC81A5F534 /* ModesoCustomButton.swift */,
-				04168E6DA4F86A9F6F0C18A7BE794E89 /* ModesoOverlayTransition.swift */,
-				6862933C93392B19FBC2C784F3A66DE3 /* UIView+extension.swift */,
+				73BEF7E7EFB6EA900275B8AC71B59039 /* ModesoActionButton.swift */,
+				09D63422E4AB35EF7351DB4DC78CA3AA /* ModesoActionOverlayViewController.swift */,
+				E967DB9531D69ED65D64F14BB1CA921C /* ModesoCustomButton.swift */,
+				CA967D1F11B1D7573470FFE362B1C74B /* ModesoOverlayTransition.swift */,
+				18BEC395AFF7FB6DB27966C60A190D65 /* UIView+extension.swift */,
 			);
 			name = Sources;
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		67DE2027001581F29AABDDE44C16B2B4 /* Development Pods */ = {
+		124F32C8CDF3A423E14A44BF9DF0BE43 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				8A6B069700A6911E588CBE76CE519C8E /* ModesoActionOverlay */,
+			);
+			name = Sources;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		2D78CFE8B0CF4021D15AC251733A041E /* ModesoActionOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				124F32C8CDF3A423E14A44BF9DF0BE43 /* Sources */,
+			);
+			name = ModesoActionOverlay;
+			path = ModesoActionOverlay;
+			sourceTree = "<group>";
+		};
+		67BE85D08355254955540410B424E4F7 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7751A1C8D4CB06E1CABF4956E4E469B /* ModesoActionOverlay */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		77F3F065A92ABC6E261AB8BA540287EC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2D78CFE8B0CF4021D15AC251733A041E /* ModesoActionOverlay */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				67DE2027001581F29AABDDE44C16B2B4 /* Development Pods */,
+				67BE85D08355254955540410B424E4F7 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				D531DF5B8C859BA7C7BD5D91D5E04686 /* Products */,
 				F20233A6B41795F8D994AB68FE79C381 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8A6B069700A6911E588CBE76CE519C8E /* ModesoActionOverlay */ = {
+		92D2BF05774CA3940BEA01064D7DBD61 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3BA19A233EAF258B1A218AED237D59DB /* ModesoActionOverlay */,
-				DFD2DF114C3B41BA7A18C9FB46398475 /* Resources */,
-				1A3496530B1E3B2D911FB6C3813A1B79 /* Support Files */,
+				393FD4304D64E7927D1FE8ED1F3CC344 /* Info.plist */,
+				AAE094D65EE4C92CD9DEEE8A79B1822C /* ModesoActionOverlay.modulemap */,
+				C5A18FDB2F7BE4F17D1B8AFA8F8E57CF /* ModesoActionOverlay.xcconfig */,
+				CED514CD17AE064056FB71FCEA852999 /* ModesoActionOverlay-dummy.m */,
+				B75D35F11B24D3FADAE5FC86CA4DECC2 /* ModesoActionOverlay-prefix.pch */,
+				4619E28825C5781C0E82D784AA88647B /* ModesoActionOverlay-umbrella.h */,
 			);
-			name = ModesoActionOverlay;
-			path = "/Users/modeso-5/ModesoProjects/ModesoActionOverlay";
-			sourceTree = "<absolute>";
-		};
-		BBE17A6D846711EF9238E9DD77DB803F /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Sources;
-			path = Sources;
+			name = "Support Files";
+			path = "ActionOverlayDemo/Pods/Target Support Files/ModesoActionOverlay";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -163,15 +160,6 @@
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BDEAC6BAC9B785B266F31BD4ADDAD771 /* ModesoActionOverlay */ = {
-			isa = PBXGroup;
-			children = (
-				BBE17A6D846711EF9238E9DD77DB803F /* Sources */,
-			);
-			name = ModesoActionOverlay;
-			path = ModesoActionOverlay;
 			sourceTree = "<group>";
 		};
 		C6502B3607C0FB0A523B738C18B78059 /* Pods-ActionOverlayDemo */ = {
@@ -209,12 +197,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DFD2DF114C3B41BA7A18C9FB46398475 /* Resources */ = {
+		E7751A1C8D4CB06E1CABF4956E4E469B /* ModesoActionOverlay */ = {
 			isa = PBXGroup;
 			children = (
-				BDEAC6BAC9B785B266F31BD4ADDAD771 /* ModesoActionOverlay */,
+				F4A8360163FBB708AF76A2F23C8D5EBA /* ModesoActionOverlay */,
+				77F3F065A92ABC6E261AB8BA540287EC /* Resources */,
+				92D2BF05774CA3940BEA01064D7DBD61 /* Support Files */,
 			);
-			name = Resources;
+			name = ModesoActionOverlay;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		F20233A6B41795F8D994AB68FE79C381 /* Targets Support Files */ = {
@@ -223,6 +214,15 @@
 				C6502B3607C0FB0A523B738C18B78059 /* Pods-ActionOverlayDemo */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F4A8360163FBB708AF76A2F23C8D5EBA /* ModesoActionOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				102FEB2E5DE8963EFF88A44E02DA3B08 /* Sources */,
+			);
+			name = ModesoActionOverlay;
+			path = ModesoActionOverlay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,7 +361,7 @@
 /* Begin XCBuildConfiguration section */
 		25C9C2E81C1799D0FDC0E2D493000733 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01790934F87208C87EB9F1D575FAE87D /* ModesoActionOverlay.xcconfig */;
+			baseConfigurationReference = C5A18FDB2F7BE4F17D1B8AFA8F8E57CF /* ModesoActionOverlay.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -564,7 +564,7 @@
 		};
 		F9306F84EA420B0799E45F43612B124D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01790934F87208C87EB9F1D575FAE87D /* ModesoActionOverlay.xcconfig */;
+			baseConfigurationReference = C5A18FDB2F7BE4F17D1B8AFA8F8E57CF /* ModesoActionOverlay.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

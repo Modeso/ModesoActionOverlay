@@ -2,15 +2,15 @@ PODS:
   - ModesoActionOverlay (1.0.0)
 
 DEPENDENCIES:
-  - ModesoActionOverlay (from `/Users/modeso-5/ModesoProjects/ModesoActionOverlay`)
+  - ModesoActionOverlay (from `../../ModesoActionOverlay`)
 
 EXTERNAL SOURCES:
   ModesoActionOverlay:
-    :path: /Users/modeso-5/ModesoProjects/ModesoActionOverlay
+    :path: ../../ModesoActionOverlay
 
 SPEC CHECKSUMS:
   ModesoActionOverlay: 97c6a655dd9c3764d691c2b0970ec9f5b86c9af7
 
-PODFILE CHECKSUM: d9142b261b68c0c3a9630a4518b86c67dcaee822
+PODFILE CHECKSUM: e0ae974b6d5ea16229a1d9aab1e93658f072ae55
 
 COCOAPODS: 1.2.1

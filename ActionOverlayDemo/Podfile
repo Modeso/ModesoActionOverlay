@@ -5,7 +5,7 @@ target 'ActionOverlayDemo' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-#  pod 'ModesoActionOverlay’, :git => 'https://github.com/Modeso/ModesoActionOverlay.git', :branch => 'Optimization'
-pod 'ModesoActionOverlay’, :path => '../../ModesoActionOverlay'
+#  pod 'ModesoActionOverlay’, :git => 'https://github.com/Modeso/ModesoActionOverlay.git''
+    pod 'ModesoActionOverlay’, :path => './../'
 
 end

@@ -42,7 +42,7 @@ ModesoActionOverlay is a "more options" button library written in Swift. It open
 $ gem install cocoapods
 ```
 
-To integrate MNavigationTabs into your Xcode project using CocoaPods, specify it in your `Podfile`:
+To integrate ModesoActionOverlay into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
@@ -81,7 +81,7 @@ Run `carthage update --platform iOS` to build the framework and drag the built `
 
 ### Manually
 
-If you prefer not to use either of the aforementioned dependency managers, you can integrate MNavigationTabs into your project manually.
+If you prefer not to use either of the aforementioned dependency managers, you can integrate ModesoActionOverlay into your project manually.
 > Simply download zip folder and unarchieve it, drag the directory `Sources/` into your project navigation and that's it.
 ---
 
@@ -176,8 +176,8 @@ extension ViewController: OverlayViewDelegate {
 
 ## Credits
 
-MNavigationTabs is owned and maintained by [Modeso](http://modeso.ch). You can follow them on Twitter at [@modeso_ch](https://twitter.com/modeso_ch) for project updates and releases.
+ModesoActionOverlay is owned and maintained by [Modeso](http://modeso.ch). You can follow them on Twitter at [@modeso_ch](https://twitter.com/modeso_ch) for project updates and releases.
 
 ## License
 
-MNavigationTabs is released under the MIT license. See LICENSE for details.
+ModesoActionOverlay is released under the MIT license. See LICENSE for details.

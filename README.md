@@ -11,7 +11,7 @@
 [![Platform](https://img.shields.io/badge/Platform-iOS-d3d3d3.svg)]()
 [![Twitter](https://img.shields.io/badge/twitter-@modeso_ch-0B0032.svg?style=flat)](http://twitter.com/AlamofireSF)
 
-ModesoActionOverlay is a "more options" button library written in Swift. It opens an overlay view with dynamic number of action buttons (1 to 5 buttons) with transition animation depending on ![Anton Aheichanka](https://dribbble.com/madebyanton)'s ![design](https://dribbble.com/shots/1977070-Profile-Screen-Animation).
+ModesoActionOverlay is a "more options" button library written in Swift. It opens an overlay view with dynamic number of action buttons (1 to 5 buttons) with transition animation depending on [Anton Aheichanka](https://dribbble.com/madebyanton)'s [design](https://dribbble.com/shots/1977070-Profile-Screen-Animation).
 
 ![](https://github.com/Modeso/ModesoActionOverlay/blob/master/ModesoActionOverlayGif.gif)
 

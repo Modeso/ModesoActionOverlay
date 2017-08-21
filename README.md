@@ -93,6 +93,7 @@ If you prefer not to use either of the aforementioned dependency managers, you c
 
 - Add your action button.
 - Change the class of the added button to `ActionButton`
+- Set target view via outlet `targetView` 
 
 ### Code
 
@@ -121,7 +122,7 @@ Then, set necessary parameters for `actionButton`
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         actionButton.parentViewController = self
-        actionButton.targetView = actionOverlayContainer
+        actionButton.targetView = yourTargetView
         actionButton.overlayViewDelegate = self
         actionButton.overlayButtonsNumber = 3
         actionButton.overlayButtonsIds = [1, 2, 3]

@@ -36,19 +36,36 @@ open class ModesoActionButton: UIButton {
         super.awakeFromNib()
 
         self.layer.cornerRadius = self.frame.height/2
-        self.addTarget(self, action: #selector(buttonClicked), for: .touchUpInside)
+        self.addTarget(self, action: #selector(buttonReleasedInside), for: .touchUpInside)
+        self.addTarget(self, action: #selector(buttonReleasedOutside), for: .touchUpOutside)
+        self.addTarget(self, action: #selector(buttonDragOutside), for: .touchDragExit)
+        self.addTarget(self, action: #selector(buttonDragInside), for: .touchDragEnter)
         self.addTarget(self, action: #selector(buttonPressed), for: .touchDown)
     }
 
     func buttonPressed() {
-        originalBackgroundColor = self.backgroundColor
+        if originalBackgroundColor == nil {
+           originalBackgroundColor = self.backgroundColor
+        }
         self.backgroundColor = buttonPressedBackgroundColor
     }
 
-    func buttonClicked() {
+    func buttonReleasedInside() {
         self.backgroundColor = originalBackgroundColor
         actionButtonOrigin = self.frame.origin
         self.animate(view: self, fromPoint: self.center, toPoint: self.targetView.center)
+    }
+    
+    func buttonReleasedOutside() {
+        self.backgroundColor = originalBackgroundColor
+    }
+    
+    func buttonDragOutside() {
+        self.backgroundColor = originalBackgroundColor
+    }
+    
+    func buttonDragInside() {
+        self.backgroundColor = buttonPressedBackgroundColor
     }
     
     func instantiateOverlayView() -> ModesoActionOverlayViewController{

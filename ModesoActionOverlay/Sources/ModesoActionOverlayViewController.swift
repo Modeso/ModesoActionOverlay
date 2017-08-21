@@ -136,7 +136,6 @@ class ModesoActionOverlayViewController: UIViewController {
     
     fileprivate func addCloseButton() -> ModesoCustomButton {
         let closeButton = ModesoCustomButton()
-        closeButton.isCloseButton = true
         closeButton.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
         if let closeButtonIcon = closeButtonIcon {
             let img = UIImage(named: closeButtonIcon)?.withRenderingMode(.alwaysTemplate)

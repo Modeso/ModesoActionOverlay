@@ -72,7 +72,7 @@ open class ModesoActionButton: UIButton {
         self.isEnabled = true
         self.alpha = 1
         self.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
-        UIView.animate(withDuration: duration, delay: 0.0, options: .curveEaseIn, animations: {
+        UIView.animate(withDuration: duration*0.25, delay: 0.0, options: .curveEaseIn, animations: {
             self.transform = .identity
         })
     }

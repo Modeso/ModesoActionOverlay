@@ -35,7 +35,7 @@ class ModesoActionOverlayViewController: UIViewController {
     
     private var buttonsCount = 0
     private var buttons: [UIButton] = []
-    private var closeButton: UIButton!
+    private var closeButton: ModesoCustomButton!
     private let buttonWidth: CGFloat = 60
     
     var delegate: OverlayViewDelegate?
@@ -134,8 +134,9 @@ class ModesoActionOverlayViewController: UIViewController {
         
     }
     
-    fileprivate func addCloseButton() -> UIButton {
-        let closeButton = UIButton()
+    fileprivate func addCloseButton() -> ModesoCustomButton {
+        let closeButton = ModesoCustomButton()
+        closeButton.isCloseButton = true
         closeButton.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
         if let closeButtonIcon = closeButtonIcon {
             let img = UIImage(named: closeButtonIcon)?.withRenderingMode(.alwaysTemplate)
@@ -160,6 +161,7 @@ class ModesoActionOverlayViewController: UIViewController {
     @objc fileprivate func closeOverlayView() {
         closeButton.transform = CGAffineTransform(rotationAngle: -180)
         buttonsCount = self.buttons.count - 1
+        closeButton.isEnabled = false
         UIView.animate(withDuration: duration, animations: {
             self.closeButton.alpha = 0
             self.closeButton.transform = CGAffineTransform.identity

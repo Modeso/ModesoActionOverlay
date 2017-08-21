@@ -1,0 +1,16 @@
+PODS:
+  - ModesoActionOverlay (1.0.0)
+
+DEPENDENCIES:
+  - ModesoActionOverlay (from `./../`)
+
+EXTERNAL SOURCES:
+  ModesoActionOverlay:
+    :path: ./../
+
+SPEC CHECKSUMS:
+  ModesoActionOverlay: 97c6a655dd9c3764d691c2b0970ec9f5b86c9af7
+
+PODFILE CHECKSUM: 0766df82d3f6033294e01b577f1f80b87f8a81b9
+
+COCOAPODS: 1.2.1

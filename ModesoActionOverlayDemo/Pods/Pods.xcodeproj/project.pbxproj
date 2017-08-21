@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F0EAECDDF2231986A6E48506FEC39A2 /* ModesoOverlayTransition.swift in Resources */ = {isa = PBXBuildFile; fileRef = EC065E01364B323511FBC4E2710A245D /* ModesoOverlayTransition.swift */; };
+		18C6D4B46C6E186530C01D7BEF40C6EE /* ModesoActionOverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E5E105E5B7532E80D43486722E364B /* ModesoActionOverlayViewController.swift */; };
+		19B0AC47DBF1945ED1B6405E2CC21FDA /* ModesoCustomButton.swift in Resources */ = {isa = PBXBuildFile; fileRef = B99FEC67713A768C05AF5A3D5CA1D7D7 /* ModesoCustomButton.swift */; };
+		606650C1435DA8D15AF2367FDF6516EF /* ModesoActionButton.swift in Resources */ = {isa = PBXBuildFile; fileRef = D2A250250E2495E2C62060A9D831F292 /* ModesoActionButton.swift */; };
+		634E28E944CE6B434AD58DFF69E9C859 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		6612AE98AEDD893CFBE7E0944589AF4F /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FC7B04DCFA2F34D8AC3B5F2572751C /* UIView+extension.swift */; };
+		77CB9F4C11875BA60CBC9C7B03ADCD24 /* ModesoActionOverlayViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = E9E5E105E5B7532E80D43486722E364B /* ModesoActionOverlayViewController.swift */; };
+		8289D0396E32A72619B77AC410614C0E /* ModesoActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A250250E2495E2C62060A9D831F292 /* ModesoActionButton.swift */; };
+		91C66AEA3794D84D4953B72A1EF314FE /* ModesoActionOverlay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F2D3FA1E66909696D581ADE55D549F /* ModesoActionOverlay-dummy.m */; };
+		AD060DCA158F4648D71782A0B67581CA /* ModesoOverlayTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC065E01364B323511FBC4E2710A245D /* ModesoOverlayTransition.swift */; };
+		D96ADEEF0483A42BB6E70E30C5BFAE87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		DA7652AC8A8D643E7FBEB2B40A1200B7 /* Pods-ModesoActionOverlayDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6129D5B5FF7BD02181871FDE6E25D66E /* Pods-ModesoActionOverlayDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC1127A698C2C9FAD7DB19EB93672B9F /* ModesoActionOverlay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E6E38EC5525C46CFA576061180CDD32 /* ModesoActionOverlay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2D9462949B396663979E6BF8C09F4E2 /* ModesoCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99FEC67713A768C05AF5A3D5CA1D7D7 /* ModesoCustomButton.swift */; };
+		F660F7C7CE33D078E2B43A411DD5996F /* UIView+extension.swift in Resources */ = {isa = PBXBuildFile; fileRef = 44FC7B04DCFA2F34D8AC3B5F2572751C /* UIView+extension.swift */; };
+		FF5F975FAF0F006438EBBA56322B99BF /* Pods-ModesoActionOverlayDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 039F80B4D69F2CCEA50D558639E971C6 /* Pods-ModesoActionOverlayDemo-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6BC1BFA75FCE34F1F8D0255AC67A871B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BB132C96521B86191CD2D64E2BEE0C4;
+			remoteInfo = ModesoActionOverlay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0098205FF7B9E3A118F2D5985657653F /* Pods-ModesoActionOverlayDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ModesoActionOverlayDemo-resources.sh"; sourceTree = "<group>"; };
+		039F80B4D69F2CCEA50D558639E971C6 /* Pods-ModesoActionOverlayDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ModesoActionOverlayDemo-dummy.m"; sourceTree = "<group>"; };
+		0449D9867520A8985594105B2146C23B /* Pods-ModesoActionOverlayDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ModesoActionOverlayDemo.release.xcconfig"; sourceTree = "<group>"; };
+		0C31D32D04338C7DAB904F557D077C5B /* ModesoActionOverlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ModesoActionOverlay.framework; path = ModesoActionOverlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		127B9926A52983B8DB40D7CB0D133231 /* ModesoActionOverlay.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ModesoActionOverlay.xcconfig; sourceTree = "<group>"; };
+		3C9C15674BA172607DF73703DD7DF633 /* Pods-ModesoActionOverlayDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ModesoActionOverlayDemo-frameworks.sh"; sourceTree = "<group>"; };
+		44FC7B04DCFA2F34D8AC3B5F2572751C /* UIView+extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
+		4D0EF3D91569F1910C09CB34BFE8F9AC /* Pods-ModesoActionOverlayDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ModesoActionOverlayDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		5C7B66D35235F931E2F907C076B10F61 /* ModesoActionOverlay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ModesoActionOverlay.modulemap; sourceTree = "<group>"; };
+		6129D5B5FF7BD02181871FDE6E25D66E /* Pods-ModesoActionOverlayDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ModesoActionOverlayDemo-umbrella.h"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7878CC5999D6CCF031E20B1BEA2E8C1D /* Pods-ModesoActionOverlayDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ModesoActionOverlayDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		8E6E38EC5525C46CFA576061180CDD32 /* ModesoActionOverlay-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ModesoActionOverlay-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AE13B5E391CD69E01CE7F3A71F1F106A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1F2D3FA1E66909696D581ADE55D549F /* ModesoActionOverlay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ModesoActionOverlay-dummy.m"; sourceTree = "<group>"; };
+		B99FEC67713A768C05AF5A3D5CA1D7D7 /* ModesoCustomButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModesoCustomButton.swift; sourceTree = "<group>"; };
+		C9363D5EE044DAFE1062808CE07043A0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF2F15C47A08BCD4077719D7CB59F3E1 /* ModesoActionOverlay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ModesoActionOverlay-prefix.pch"; sourceTree = "<group>"; };
+		D2A250250E2495E2C62060A9D831F292 /* ModesoActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModesoActionButton.swift; sourceTree = "<group>"; };
+		D5BCBBBA4934EDBCAE52E8C0DDE3A38E /* Pods-ModesoActionOverlayDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ModesoActionOverlayDemo.modulemap"; sourceTree = "<group>"; };
+		E9E5E105E5B7532E80D43486722E364B /* ModesoActionOverlayViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModesoActionOverlayViewController.swift; sourceTree = "<group>"; };
+		EA842E5223A4F6AFAA8AAF632596B068 /* Pods-ModesoActionOverlayDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ModesoActionOverlayDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EC065E01364B323511FBC4E2710A245D /* ModesoOverlayTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModesoOverlayTransition.swift; sourceTree = "<group>"; };
+		F07E1E1509A7FCB7619E6ADB698A5B0D /* Pods_ModesoActionOverlayDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ModesoActionOverlayDemo.framework; path = "Pods-ModesoActionOverlayDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4494904A699E126615D2665943869A7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				634E28E944CE6B434AD58DFF69E9C859 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		564B503B094AF989462FD437F88CA1AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D96ADEEF0483A42BB6E70E30C5BFAE87 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BFC0F590013F246685D2A7FA432AD8B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6B06DD0EA249BB04234CF7A7E4D8016C /* ModesoActionOverlay */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2280BBEFB32A04EBE3C67775F80E5E09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C31D32D04338C7DAB904F557D077C5B /* ModesoActionOverlay.framework */,
+				F07E1E1509A7FCB7619E6ADB698A5B0D /* Pods_ModesoActionOverlayDemo.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32971381BE306A4DF3A0DE67B94B74A1 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D2A250250E2495E2C62060A9D831F292 /* ModesoActionButton.swift */,
+				E9E5E105E5B7532E80D43486722E364B /* ModesoActionOverlayViewController.swift */,
+				B99FEC67713A768C05AF5A3D5CA1D7D7 /* ModesoCustomButton.swift */,
+				EC065E01364B323511FBC4E2710A245D /* ModesoOverlayTransition.swift */,
+				44FC7B04DCFA2F34D8AC3B5F2572751C /* UIView+extension.swift */,
+			);
+			name = Sources;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		36D5EC925BD12AF66CF03D020F3B21B7 /* ModesoActionOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				32971381BE306A4DF3A0DE67B94B74A1 /* Sources */,
+			);
+			name = ModesoActionOverlay;
+			path = ModesoActionOverlay;
+			sourceTree = "<group>";
+		};
+		67BE85D08355254955540410B424E4F7 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B98353C7C86437EE61FA6047BFD2EAD7 /* ModesoActionOverlay */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		6B06DD0EA249BB04234CF7A7E4D8016C /* ModesoActionOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				79F1855591725F8A3D88F60A77F3DD60 /* Sources */,
+			);
+			name = ModesoActionOverlay;
+			path = ModesoActionOverlay;
+			sourceTree = "<group>";
+		};
+		71D173959DD03085B6737FE6B642194B /* Pods-ModesoActionOverlayDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AE13B5E391CD69E01CE7F3A71F1F106A /* Info.plist */,
+				D5BCBBBA4934EDBCAE52E8C0DDE3A38E /* Pods-ModesoActionOverlayDemo.modulemap */,
+				EA842E5223A4F6AFAA8AAF632596B068 /* Pods-ModesoActionOverlayDemo-acknowledgements.markdown */,
+				4D0EF3D91569F1910C09CB34BFE8F9AC /* Pods-ModesoActionOverlayDemo-acknowledgements.plist */,
+				039F80B4D69F2CCEA50D558639E971C6 /* Pods-ModesoActionOverlayDemo-dummy.m */,
+				3C9C15674BA172607DF73703DD7DF633 /* Pods-ModesoActionOverlayDemo-frameworks.sh */,
+				0098205FF7B9E3A118F2D5985657653F /* Pods-ModesoActionOverlayDemo-resources.sh */,
+				6129D5B5FF7BD02181871FDE6E25D66E /* Pods-ModesoActionOverlayDemo-umbrella.h */,
+				7878CC5999D6CCF031E20B1BEA2E8C1D /* Pods-ModesoActionOverlayDemo.debug.xcconfig */,
+				0449D9867520A8985594105B2146C23B /* Pods-ModesoActionOverlayDemo.release.xcconfig */,
+			);
+			name = "Pods-ModesoActionOverlayDemo";
+			path = "Target Support Files/Pods-ModesoActionOverlayDemo";
+			sourceTree = "<group>";
+		};
+		79F1855591725F8A3D88F60A77F3DD60 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Sources;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		7C8080442E4A7DBBF8F065E123A1E67D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9363D5EE044DAFE1062808CE07043A0 /* Info.plist */,
+				5C7B66D35235F931E2F907C076B10F61 /* ModesoActionOverlay.modulemap */,
+				127B9926A52983B8DB40D7CB0D133231 /* ModesoActionOverlay.xcconfig */,
+				B1F2D3FA1E66909696D581ADE55D549F /* ModesoActionOverlay-dummy.m */,
+				CF2F15C47A08BCD4077719D7CB59F3E1 /* ModesoActionOverlay-prefix.pch */,
+				8E6E38EC5525C46CFA576061180CDD32 /* ModesoActionOverlay-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "ModesoActionOverlayDemo/Pods/Target Support Files/ModesoActionOverlay";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				67BE85D08355254955540410B424E4F7 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				2280BBEFB32A04EBE3C67775F80E5E09 /* Products */,
+				BBC8EF62C13867DED571C704E63042F4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B98353C7C86437EE61FA6047BFD2EAD7 /* ModesoActionOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				36D5EC925BD12AF66CF03D020F3B21B7 /* ModesoActionOverlay */,
+				0BFC0F590013F246685D2A7FA432AD8B /* Resources */,
+				7C8080442E4A7DBBF8F065E123A1E67D /* Support Files */,
+			);
+			name = ModesoActionOverlay;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BBC8EF62C13867DED571C704E63042F4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				71D173959DD03085B6737FE6B642194B /* Pods-ModesoActionOverlayDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		73239D4D64CB6EFA0B4ECC02AF03D524 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC1127A698C2C9FAD7DB19EB93672B9F /* ModesoActionOverlay-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E33FC9782C887E8EF8F2857C53A9A673 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7652AC8A8D643E7FBEB2B40A1200B7 /* Pods-ModesoActionOverlayDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1362ADF10436A0FBE8ED0A52928062E6 /* Pods-ModesoActionOverlayDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE79FD63757890BDE222669C5EEFE120 /* Build configuration list for PBXNativeTarget "Pods-ModesoActionOverlayDemo" */;
+			buildPhases = (
+				0D567B72D02C9466BC8927F6C91452FD /* Sources */,
+				4494904A699E126615D2665943869A7F /* Frameworks */,
+				E33FC9782C887E8EF8F2857C53A9A673 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10386809533E0DB4A954EFA1620FF522 /* PBXTargetDependency */,
+			);
+			name = "Pods-ModesoActionOverlayDemo";
+			productName = "Pods-ModesoActionOverlayDemo";
+			productReference = F07E1E1509A7FCB7619E6ADB698A5B0D /* Pods_ModesoActionOverlayDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4BB132C96521B86191CD2D64E2BEE0C4 /* ModesoActionOverlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEE3C237C74A45FF1561E4C1F08DDDF2 /* Build configuration list for PBXNativeTarget "ModesoActionOverlay" */;
+			buildPhases = (
+				810D36AD7497E55C29DF8C20D49A90C9 /* Sources */,
+				564B503B094AF989462FD437F88CA1AE /* Frameworks */,
+				CDBD2BC686265E6B6F44A3A22AE60E00 /* Resources */,
+				73239D4D64CB6EFA0B4ECC02AF03D524 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ModesoActionOverlay;
+			productName = ModesoActionOverlay;
+			productReference = 0C31D32D04338C7DAB904F557D077C5B /* ModesoActionOverlay.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 2280BBEFB32A04EBE3C67775F80E5E09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BB132C96521B86191CD2D64E2BEE0C4 /* ModesoActionOverlay */,
+				1362ADF10436A0FBE8ED0A52928062E6 /* Pods-ModesoActionOverlayDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDBD2BC686265E6B6F44A3A22AE60E00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				606650C1435DA8D15AF2367FDF6516EF /* ModesoActionButton.swift in Resources */,
+				77CB9F4C11875BA60CBC9C7B03ADCD24 /* ModesoActionOverlayViewController.swift in Resources */,
+				19B0AC47DBF1945ED1B6405E2CC21FDA /* ModesoCustomButton.swift in Resources */,
+				0F0EAECDDF2231986A6E48506FEC39A2 /* ModesoOverlayTransition.swift in Resources */,
+				F660F7C7CE33D078E2B43A411DD5996F /* UIView+extension.swift in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D567B72D02C9466BC8927F6C91452FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF5F975FAF0F006438EBBA56322B99BF /* Pods-ModesoActionOverlayDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		810D36AD7497E55C29DF8C20D49A90C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8289D0396E32A72619B77AC410614C0E /* ModesoActionButton.swift in Sources */,
+				91C66AEA3794D84D4953B72A1EF314FE /* ModesoActionOverlay-dummy.m in Sources */,
+				18C6D4B46C6E186530C01D7BEF40C6EE /* ModesoActionOverlayViewController.swift in Sources */,
+				F2D9462949B396663979E6BF8C09F4E2 /* ModesoCustomButton.swift in Sources */,
+				AD060DCA158F4648D71782A0B67581CA /* ModesoOverlayTransition.swift in Sources */,
+				6612AE98AEDD893CFBE7E0944589AF4F /* UIView+extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10386809533E0DB4A954EFA1620FF522 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ModesoActionOverlay;
+			target = 4BB132C96521B86191CD2D64E2BEE0C4 /* ModesoActionOverlay */;
+			targetProxy = 6BC1BFA75FCE34F1F8D0255AC67A871B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		25C9C2E81C1799D0FDC0E2D493000733 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 127B9926A52983B8DB40D7CB0D133231 /* ModesoActionOverlay.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ModesoActionOverlay/ModesoActionOverlay-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ModesoActionOverlay/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ModesoActionOverlay/ModesoActionOverlay.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ModesoActionOverlay;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E1256B4493484BE6428F7BD55C30977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7878CC5999D6CCF031E20B1BEA2E8C1D /* Pods-ModesoActionOverlayDemo.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ModesoActionOverlayDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ModesoActionOverlayDemo/Pods-ModesoActionOverlayDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ModesoActionOverlayDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		65B883A6A4949C06FDC083BAC429A02E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0449D9867520A8985594105B2146C23B /* Pods-ModesoActionOverlayDemo.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ModesoActionOverlayDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ModesoActionOverlayDemo/Pods-ModesoActionOverlayDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ModesoActionOverlayDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C104F7F091290C3D1E248192F07FE689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F9306F84EA420B0799E45F43612B124D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 127B9926A52983B8DB40D7CB0D133231 /* ModesoActionOverlay.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ModesoActionOverlay/ModesoActionOverlay-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ModesoActionOverlay/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ModesoActionOverlay/ModesoActionOverlay.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ModesoActionOverlay;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C104F7F091290C3D1E248192F07FE689 /* Debug */,
+				34FE9531DA9AF2820790339988D5FF41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE79FD63757890BDE222669C5EEFE120 /* Build configuration list for PBXNativeTarget "Pods-ModesoActionOverlayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E1256B4493484BE6428F7BD55C30977 /* Debug */,
+				65B883A6A4949C06FDC083BAC429A02E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEE3C237C74A45FF1561E4C1F08DDDF2 /* Build configuration list for PBXNativeTarget "ModesoActionOverlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9306F84EA420B0799E45F43612B124D /* Debug */,
+				25C9C2E81C1799D0FDC0E2D493000733 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

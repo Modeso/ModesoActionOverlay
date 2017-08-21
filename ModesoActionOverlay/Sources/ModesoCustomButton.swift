@@ -9,10 +9,16 @@
 import UIKit
 
 class ModesoCustomButton: UIButton {
-
+    
+    var isCloseButton = false
+    
     override var isHighlighted: Bool {
         didSet {
-            alpha = isHighlighted ?  0.7: 1.0
+            if isCloseButton {
+                alpha = isHighlighted ?  0.5: 1.0
+            } else {
+                alpha = isHighlighted ?  0.7: 1.0
+            }
         }
     }
 }

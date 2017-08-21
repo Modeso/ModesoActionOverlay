@@ -23,7 +23,9 @@ open class ModesoActionButton: UIButton {
     open var overlayButtonsImages: [String]!
     open var transition: UIViewControllerAnimatedTransitioning?
     open var closeButtonIcon: String!
-    
+    open var buttonPressedBackgroundColor: UIColor?
+    private var originalBackgroundColor: UIColor?
+
     /**
      The animation duration
      Defaults to `0.25`
@@ -32,13 +34,19 @@ open class ModesoActionButton: UIButton {
 
     override open func awakeFromNib() {
         super.awakeFromNib()
-        
+
         self.layer.cornerRadius = self.frame.height/2
         self.addTarget(self, action: #selector(buttonClicked), for: .touchUpInside)
+        self.addTarget(self, action: #selector(buttonPressed), for: .touchDown)
+    }
+
+    func buttonPressed() {
+        originalBackgroundColor = self.backgroundColor
+        self.backgroundColor = buttonPressedBackgroundColor
     }
 
     func buttonClicked() {
-
+        self.backgroundColor = originalBackgroundColor
         actionButtonOrigin = self.frame.origin
         self.animate(view: self, fromPoint: self.center, toPoint: self.targetView.center)
     }

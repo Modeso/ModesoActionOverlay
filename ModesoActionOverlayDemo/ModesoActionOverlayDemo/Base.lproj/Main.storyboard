@@ -21,22 +21,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CXe-2f-mgd">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile-img" translatesAutoresizingMaskIntoConstraints="NO" id="Afm-5j-FT0">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="264"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile-img" translatesAutoresizingMaskIntoConstraints="NO" id="Afm-5j-FT0">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="264"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="264" id="1ff-dH-GfV"/>
-                                    <constraint firstItem="Afm-5j-FT0" firstAttribute="leading" secondItem="CXe-2f-mgd" secondAttribute="leading" id="Pcq-15-7xc"/>
-                                    <constraint firstItem="Afm-5j-FT0" firstAttribute="top" secondItem="CXe-2f-mgd" secondAttribute="top" id="YJW-rw-cVj"/>
-                                    <constraint firstAttribute="trailing" secondItem="Afm-5j-FT0" secondAttribute="trailing" id="ekc-fN-Ef3"/>
-                                    <constraint firstAttribute="bottom" secondItem="Afm-5j-FT0" secondAttribute="bottom" id="evy-5f-hBB"/>
+                                    <constraint firstAttribute="height" constant="264" id="ACR-PC-UM5"/>
                                 </constraints>
-                            </view>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chart-img" translatesAutoresizingMaskIntoConstraints="NO" id="8VH-2R-ihj">
                                 <rect key="frame" x="0.0" y="264" width="375" height="403"/>
                             </imageView>
@@ -50,24 +40,26 @@
                                 <state key="normal">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <outlet property="targetView" destination="8VH-2R-ihj" id="P9X-GL-8cO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="CXe-2f-mgd" firstAttribute="leading" secondItem="6bR-iX-Ffn" secondAttribute="leading" id="6m4-by-OCO"/>
-                            <constraint firstItem="8VH-2R-ihj" firstAttribute="top" secondItem="Afm-5j-FT0" secondAttribute="bottom" id="7Nk-WB-dDF"/>
-                            <constraint firstAttribute="trailing" secondItem="CXe-2f-mgd" secondAttribute="trailing" id="FuL-ZU-RPr"/>
-                            <constraint firstItem="CXe-2f-mgd" firstAttribute="top" secondItem="6bR-iX-Ffn" secondAttribute="top" id="JzF-yG-FNC"/>
-                            <constraint firstItem="dep-FV-DMz" firstAttribute="top" secondItem="CXe-2f-mgd" secondAttribute="bottom" constant="-25" id="Lly-S9-LJQ"/>
+                            <constraint firstItem="dep-FV-DMz" firstAttribute="top" secondItem="Afm-5j-FT0" secondAttribute="bottom" constant="-25" id="DdH-c1-8O2"/>
+                            <constraint firstItem="8VH-2R-ihj" firstAttribute="top" secondItem="Afm-5j-FT0" secondAttribute="bottom" id="MFw-yS-Dmn"/>
                             <constraint firstItem="8VH-2R-ihj" firstAttribute="leading" secondItem="6bR-iX-Ffn" secondAttribute="leading" id="NQ5-Kv-dXT"/>
                             <constraint firstAttribute="trailing" secondItem="dep-FV-DMz" secondAttribute="trailing" constant="11" id="bxe-g8-K5M"/>
+                            <constraint firstItem="Afm-5j-FT0" firstAttribute="leading" secondItem="6bR-iX-Ffn" secondAttribute="leading" id="ctW-TS-yTr"/>
                             <constraint firstItem="Pef-Z3-lNH" firstAttribute="top" secondItem="8VH-2R-ihj" secondAttribute="bottom" id="ix0-aB-7ZT"/>
+                            <constraint firstItem="Afm-5j-FT0" firstAttribute="top" secondItem="6bR-iX-Ffn" secondAttribute="top" id="oO3-6b-Aez"/>
+                            <constraint firstAttribute="trailing" secondItem="Afm-5j-FT0" secondAttribute="trailing" id="pPs-HO-xbe"/>
                             <constraint firstAttribute="trailing" secondItem="8VH-2R-ihj" secondAttribute="trailing" id="sLy-wS-gCL"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="actionButton" destination="dep-FV-DMz" id="gvc-Yt-4Yg"/>
-                        <outlet property="actionOverlayContainer" destination="CXe-2f-mgd" id="ag2-sK-UsN"/>
                         <outlet property="chartImg" destination="8VH-2R-ihj" id="vlp-ll-kSy"/>
                         <outlet property="profileImg" destination="Afm-5j-FT0" id="cnV-zf-MeX"/>
                     </connections>
@@ -78,7 +70,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="chart-img" width="495" height="577"/>
+        <image name="chart-img" width="750" height="871"/>
         <image name="profile-img" width="750" height="460"/>
     </resources>
 </document>

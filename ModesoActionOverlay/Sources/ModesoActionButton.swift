@@ -16,8 +16,9 @@ open class ModesoActionButton: UIButton {
      */
     private var actionButtonOrigin: CGPoint!
 
+    @IBOutlet weak open var targetView: UIView!
+    
     open var parentViewController: UIViewController?
-    open var targetView: UIView!
     open var overlayButtonsNumber: Int!
     open var overlayButtonsIds: [Int]!
     open var overlayButtonsImages: [String]!

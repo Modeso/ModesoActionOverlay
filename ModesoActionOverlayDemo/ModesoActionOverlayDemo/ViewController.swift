@@ -12,7 +12,6 @@ import ModesoActionOverlay
 class ViewController: UIViewController {
 
     @IBOutlet weak var actionButton: ModesoActionButton!
-    @IBOutlet weak var actionOverlayContainer: UIView!
     @IBOutlet weak var profileImg: UIImageView!
     @IBOutlet weak var chartImg: UIImageView!
 
@@ -39,7 +38,12 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
 
         actionButton.parentViewController = self
-        actionButton.targetView = actionOverlayContainer
+
+        // set targetView if not set via outlet
+//        actionButton.targetView = profileImg    // demo 1
+//        actionButton.targetView = chartImg      // demo 2
+//        actionButton.targetView = self.view     // demo 3
+        
         actionButton.overlayViewDelegate = self
         actionButton.overlayButtonsNumber = 3
         actionButton.overlayButtonsIds = [1, 2, 3, 4, 5]

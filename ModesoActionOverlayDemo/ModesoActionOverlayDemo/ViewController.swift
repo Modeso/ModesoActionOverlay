@@ -69,6 +69,7 @@ extension ViewController: OverlayViewDelegate {
         actionButton.showActionButton()
     }
     func buttonClicked(id: Int) {
+        actionButton.closeOverlayView?()
         print("buttonID \(id)")
     }
 }

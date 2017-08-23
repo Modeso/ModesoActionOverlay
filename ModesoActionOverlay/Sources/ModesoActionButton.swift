@@ -26,7 +26,7 @@ open class ModesoActionButton: UIButton {
     open var closeButtonIcon: String!
     open var buttonPressedBackgroundColor: UIColor?
     private var originalBackgroundColor: UIColor?
-
+    open var closeOverlayView: ((Void) -> Void)?
     /**
      The animation duration
      Defaults to `0.25`
@@ -82,6 +82,7 @@ open class ModesoActionButton: UIButton {
         vc.overlayViewColor = self.backgroundColor
         vc.duration = duration
         vc.modesoOverlayTransition = transition
+        closeOverlayView = vc.closeOverlayView
         return vc
     }
 

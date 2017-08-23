@@ -157,7 +157,7 @@ class ModesoActionOverlayViewController: UIViewController {
         return closeButton
     }
     
-    @objc fileprivate func closeOverlayView() {
+    @objc func closeOverlayView() {
         closeButton.transform = CGAffineTransform(rotationAngle: -180)
         buttonsCount = self.buttons.count - 1
         closeButton.isEnabled = false
@@ -187,7 +187,6 @@ class ModesoActionOverlayViewController: UIViewController {
     }
     
     @objc fileprivate func overlayButtonClicked(_ sender: UIButton) {
-        closeOverlayView()
         delegate?.buttonClicked(id: sender.tag)
     }
 }

@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
+        
         actionButton.parentViewController = self
 
         // set targetView if not set via outlet
@@ -46,12 +46,17 @@ class ViewController: UIViewController {
         
         actionButton.overlayViewDelegate = self
         actionButton.overlayButtonsNumber = 3
-        actionButton.overlayButtonsIds = [1, 2, 3, 4, 5]
+        actionButton.overlayButtonsIds = [0, 1, 2, 3, 4]
         actionButton.overlayButtonsImages = ["camera-icon", "share-icon", "cloud-icon", "share-icon", "cloud-icon"]
         actionButton.closeButtonIcon = "close-icon"
         actionButton.duration = 0.25
         actionButton.buttonPressedBackgroundColor = UIColor(red: 194/255, green: 27/255, blue: 79/255, alpha: 1)
         actionButton.transition = transition
+    }
+    
+    func switchTargetView(id: Int) {
+        let targetViews = [profileImg, chartImg, self.view]
+        actionButton.targetView = targetViews[id<targetViews.count ? id : 0]
     }
 }
 
@@ -69,7 +74,8 @@ extension ViewController: OverlayViewDelegate {
         actionButton.showActionButton()
     }
     func buttonClicked(id: Int) {
-        actionButton.closeOverlayView?()
         print("buttonID \(id)")
+        actionButton.closeOverlayView?()
+        switchTargetView(id: id)
     }
 }

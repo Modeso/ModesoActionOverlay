@@ -187,6 +187,7 @@ class ModesoActionOverlayViewController: UIViewController {
     }
     
     @objc fileprivate func overlayButtonClicked(_ sender: UIButton) {
+        closeOverlayView()
         delegate?.buttonClicked(id: sender.tag)
     }
 }
